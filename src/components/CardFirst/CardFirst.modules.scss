@@ -1,0 +1,51 @@
+
+
+.CardFirst{
+    display: flex;
+    width: 22.5rem;
+    padding: 2.5rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+
+    border-radius: 0.625rem;
+    border: 1px solid rgba(255, 255, 255, 0.20);
+    background: #0D0D0D;
+}
+
+.title{
+    color: #FFF;
+    text-align: center;
+}
+
+.description{
+    color: #FFF;
+    text-align: center; 
+    width: 19.9375rem;
+}
+
+.image{
+    width: 1.25rem;
+    height: 1.25rem;
+}
+
+.BoxDescription{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.BoxIcon{
+    display: flex;
+    padding: 1.125rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+
+    border-radius: 0.625rem;
+    background: #FFF;
+}
