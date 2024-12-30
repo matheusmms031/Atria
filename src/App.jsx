@@ -3,13 +3,14 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import "./constants/typografy.scss"
 import './App.css'
+import Nav from './components/Nav/Nav'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-      <span className="title1">Teste</span>
+      <Nav/>
     </>
   )
 }

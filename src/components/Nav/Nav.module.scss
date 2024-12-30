@@ -1,0 +1,29 @@
+.box{
+    display: flex;
+    width: 120rem;
+    padding: 1.25rem;
+    justify-content: center;
+    align-items: center;
+    gap: 28.9375rem;
+    background: rgb(0, 0, 0);
+    backdrop-filter: blur(7px);
+}
+
+.items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+
+    span{
+        color: #FFF;
+    }
+}
+
+.img{
+    display: flex;
+    width: 9.9375rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.625rem;
+}
