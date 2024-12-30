@@ -1,3 +1,66 @@
 // Arquivo de tipografia
 
-.
+.title1{
+    font-family: "DM Sans";
+    font-size: 5.625rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 5.625rem; /* 100% */
+    letter-spacing: -0.36563rem;
+}
+
+.title2{
+    /* H2 */
+    font-family: "DM Sans";
+    font-size: 3.375rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 3.4375rem; /* 101.852% */
+    letter-spacing: -0.10125rem;
+}
+
+.title4{
+    font-family: "DM Sans";
+    font-size: 1.625rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.25rem; /* 76.923% */
+    letter-spacing: -0.065rem;
+}
+
+.title5{
+    font-family: "DM Sans";
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.03488rem;
+}
+
+// Body
+
+.bodyLarge{
+    font-family: "Nunito";
+    font-size: 1.375rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.9375rem; /* 140.909% */
+    letter-spacing: -0.0495rem;
+}
+
+.bodyMedium{
+    font-family: "Nunito";
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.4375rem; /* 143.75% */
+    letter-spacing: -0.01rem;
+}
+
+.bodySmall{
+    font-family: "Nunito";
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
