@@ -1,0 +1,37 @@
+
+
+.CardSecond{
+    display: flex;
+    width: 30.375rem;
+    padding: 2.5rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1.25rem;
+    border: 1px solid rgba(27, 27, 27, 0.08);
+    box-shadow: 0px 7px 24px 0px #24262B;
+}
+
+.texts{
+    display: flex;
+    width: 24.0625rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.625rem;
+}
+
+.title{
+    text-align: center;
+    background: linear-gradient(180deg, #FFF 0%, #E8E120 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.description{
+    color: #FFF;
+    text-align: center;
+    width: 21.5625rem;
+    height: 4.3125rem;
+}
+
