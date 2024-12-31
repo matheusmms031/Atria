@@ -9,6 +9,7 @@ import { CardFirst } from "../../components/CardFirst/CardFirst"
 import WhatsappIcon from "../../assets/Icons/Icons=Whatsapp.svg"
 import WifiIcon from "../../assets/Icons/Icons=Wifi.svg"
 import AppIcon from "../../assets/Icons/Icons=App.svg"
+import Tag from "../../components/Tag/Tag.jsx"
 
 
 export default function Home(){
@@ -17,9 +18,10 @@ export default function Home(){
             <Nav/>
             <section className={styles.hero}>
                 <div className={styles.heroContent}>
+                    <Tag showMore={true} >Conheça nossas vantagens</Tag>
                     <span className={styles.titleFirst}>Olá, Vila da Serra</span>
-                    <span className={`${styles.heroDescription} bodyLarge`} >Celebrate the joy of accomplishment with an app designed to track your progress, motivate your efforts, and celebrate your successes.</span>
-                    <ButtonSample onClick={() => console.log("Clicou no botão")}>Saiba mais</ButtonSample>
+                    <span className={`${styles.heroDescription} bodyLarge`} >Bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla.</span>
+                    <ButtonSample onClick={() => console.log("Clicou no botão")}>Conheça nossos planos</ButtonSample>
                 </div>
                 <video autoPlay muted loop className={styles.video} src={video}/>
             </section>
