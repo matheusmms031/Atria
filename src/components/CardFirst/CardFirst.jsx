@@ -1,14 +1,14 @@
-import styles from "./CardFirst.modules.scss"
+import styles from "./CardFirst.module.scss"
 
-export default function CardFirst(props){
+export function CardFirst({image, title, description}){
     return(
         <div className={styles.CardFirst}>
             <div className={styles.BoxIcon}>
-                <img src={props.image} className={styles.image}/>
+                <img src={image} className={styles.image}/>
             </div>
             <div className={styles.BoxDescription}>
-                <span className={`${styles.title} title5`}>{props.title}</span>
-                <span className={`${styles.description} description`}>{props.description}</span>
+                <span className={`${styles.title} title5`}>{title}</span>
+                <span className={`${styles.description} bodyMedium`}>{description}</span>
             </div>
         </div>
     )
