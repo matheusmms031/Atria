@@ -7,9 +7,12 @@ import premier from "../../assets/premier.png"
 import telecine from "../../assets/telecine.png"
 import { CardFirst } from "../../components/CardFirst/CardFirst"
 import WhatsappIcon from "../../assets/Icons/Icons=Whatsapp.svg"
+import Card1 from "../../assets/card1.png"
+import Card2 from "../../assets/card2.png"
 import WifiIcon from "../../assets/Icons/Icons=Wifi.svg"
 import AppIcon from "../../assets/Icons/Icons=App.svg"
 import Tag from "../../components/Tag/Tag.jsx"
+import CardSecond from "../../components/CardSecond/CardSecond.jsx"
 
 
 export default function Home(){
@@ -45,7 +48,7 @@ export default function Home(){
                         </span>
                     </div>
                     <div className={styles.inovationCards}>
-                        <CardFirst image={WhatsappIcon} title="Suporte por Whatsapp" description="Estamos no Whatsapp para solucionar problemas a distância, estando 24 horas dispostos."/>.
+                        <CardFirst image={WhatsappIcon} title="Suporte por Whatsapp" description="Estamos no Whatsapp para solucionar problemas a distância, estando 24 horas dispostos."/>
                         <CardFirst image={WifiIcon} title="Roteadores com Wifi 6 e 7" description="Utilizamos como padrão roteadores da Huawei, contendo suporte a versão mais recente de Wifi."/>
                         <CardFirst image={AppIcon} title="Aplicativo de gerenciamento" description="Oferecemos aos nossos clientes um aplicativo mobile para gerenciar seus planos e pontos."/>
                     </div>  
@@ -56,9 +59,13 @@ export default function Home(){
                     <div className={styles.worksTexts}>
                         <Tag>Tudo que você precisa</Tag>
                         <div className={styles.worksTitles}>
-                            <span>Faça suas atividades com tranquilidade</span>
-                            <span>Trabalhe, estude e jogue com conforto sem se preocupar com problemas de conexão e estabilidade de rede, seus problemas acabaram com a Átria.</span>
+                            <span className={`${styles.worksTitle} title2`}>Faça suas atividades <br/> com tranquilidade</span>
+                            <span className={`${styles.worksDescription} bodyLarge`}>Trabalhe, estude e jogue com conforto sem se preocupar com problemas de conexão e estabilidade de rede, seus problemas acabaram com a Átria.</span>
                         </div>
+                    </div>
+                    <div className={styles.worksCards}>
+                        <CardSecond image={Card1} title="Extrema conectividade" description="Nossos planos são essencialmente construidos para proporcionar um ambiente de alta conectividade e velocidade."/>
+                        <CardSecond image={Card2} title="Conexão Robusta" description="Todo o nossos sistema é robusto e sólido, testado e aprovado para evitar quedas na rede, assim garantindo confiabilidade."/>
                     </div>
                 </div>
             </section>
