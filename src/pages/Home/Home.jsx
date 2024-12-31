@@ -47,8 +47,19 @@ export default function Home(){
                     <div className={styles.inovationCards}>
                         <CardFirst image={WhatsappIcon} title="Suporte por Whatsapp" description="Estamos no Whatsapp para solucionar problemas a distância, estando 24 horas dispostos."/>.
                         <CardFirst image={WifiIcon} title="Roteadores com Wifi 6 e 7" description="Utilizamos como padrão roteadores da Huawei, contendo suporte a versão mais recente de Wifi."/>
-                        <CardFirst image={AppIcon} title="Aplicativo de gerenciamento" description="Oferecemos aos nossos clientes um aplicativo mobile para gerenciar seus planos e pontos."/>.
+                        <CardFirst image={AppIcon} title="Aplicativo de gerenciamento" description="Oferecemos aos nossos clientes um aplicativo mobile para gerenciar seus planos e pontos."/>
                     </div>  
+                </div>
+            </section>
+            <section className={styles.works}>
+                <div className={styles.worksContent}>
+                    <div className={styles.worksTexts}>
+                        <Tag>Tudo que você precisa</Tag>
+                        <div className={styles.worksTitles}>
+                            <span>Faça suas atividades com tranquilidade</span>
+                            <span>Trabalhe, estude e jogue com conforto sem se preocupar com problemas de conexão e estabilidade de rede, seus problemas acabaram com a Átria.</span>
+                        </div>
+                    </div>
                 </div>
             </section>
         </div>

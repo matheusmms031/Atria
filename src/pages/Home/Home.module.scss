@@ -127,6 +127,64 @@
 
 .inovationCards{
     display: flex;
-    align-items: flex-start;
+    align-items: center;
+    justify-content: center;
     gap: 1rem;
+    flex-wrap: wrap;
+}
+
+
+@media (max-width:720px) {
+    .titleFirst{
+        color: #FFF;
+        text-align: center;
+
+        /* H1 */
+        font-family: "DM Sans";
+        font-size: 5.625rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 5.625rem; /* 100% */
+        letter-spacing: -0.36563rem;
+        width: fit-content;
+        height: fit-content;
+    }
+
+    .heroContent{
+        display: flex;
+        width: 100vw;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .heroDescription{
+        width: 20.9375rem;
+    }
+    .logosCollection{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 5rem;
+    }
+    .logos{
+        display: flex;
+        height: fit-content;
+        padding: 2.1875rem 5.5rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0.625rem;
+        flex-shrink: 0;
+        align-self: stretch;
+        background-color: #000;
+    }
+
+    .inovationDescription{
+        color: #FFF;
+        text-align: center;
+        width: 22.3125rem;
+    }
 }

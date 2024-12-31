@@ -73,3 +73,14 @@
     font-weight: 400;
     line-height: normal;
 }
+
+
+@media (max-width:720px) {
+    .title2{
+        font-size: 2rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 2rem; /* 100% */
+        letter-spacing: -0.02rem;
+    }
+}

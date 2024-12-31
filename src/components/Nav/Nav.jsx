@@ -10,6 +10,7 @@ export default function Nav(){
                 <span className="bodyMedium">Planos</span>
                 <span className="bodyMedium">Contato</span>
             </div>
+
         </div>
     )
 }
