@@ -6,6 +6,9 @@
     justify-content: center;
     align-items: center;
     gap: 23vw;
+    position: fixed;
+    top: 0;
+    z-index: 2;
     background: rgb(0, 0, 0);
     backdrop-filter: blur(7px);
 }
@@ -32,9 +35,7 @@
 @media (max-width:720px){
     .box{
         gap:0px;
-        width: 96vw;
-        padding-left: 2vw;
-        padding-right: 2vw;
+        width: 100vw;
         justify-content: space-around;
     }
 
