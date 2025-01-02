@@ -7,13 +7,14 @@ import premier from "../../assets/premier.png"
 import telecine from "../../assets/telecine.png"
 import { CardFirst } from "../../components/CardFirst/CardFirst"
 import WhatsappIcon from "../../assets/Icons/Icons=Whatsapp.svg"
+import WhatsappIconW from "../../assets/Icons/Icons=Whatsapp-w.svg"
 import Card1 from "../../assets/card1.png"
 import Card2 from "../../assets/card2.png"
 import WifiIcon from "../../assets/Icons/Icons=Wifi.svg"
 import AppIcon from "../../assets/Icons/Icons=App.svg"
 import Tag from "../../components/Tag/Tag.jsx"
 import CardSecond from "../../components/CardSecond/CardSecond.jsx"
-
+import FeatureBox from "../../components/FeatureBox/FeatureBox"
 
 export default function Home(){
     return(
@@ -66,6 +67,28 @@ export default function Home(){
                     <div className={styles.worksCards}>
                         <CardSecond image={Card1} title="Extrema conectividade" description="Nossos planos são essencialmente construidos para proporcionar um ambiente de alta conectividade e velocidade."/>
                         <CardSecond image={Card2} title="Conexão Robusta" description="Todo o nossos sistema é robusto e sólido, testado e aprovado para evitar quedas na rede, assim garantindo confiabilidade."/>
+                    </div>
+                </div>
+            </section>
+            <section className={styles.features}>
+                <div className={styles.featuresContent}>
+                    <span className={`${styles.featuresTitle} title2`}>Veja nossos diferenciais</span>
+                    <div className={styles.featuresBoxesLines}>
+                        <div className={styles.featuresBoxesCollumns}>
+                            <FeatureBox image={WhatsappIconW} title="Rápida velocidade" description="Velocidade rápida de navegação garantida pela alta banda larga."/>
+                            <FeatureBox image={WhatsappIconW} title="Rápida velocidade" description="Velocidade rápida de navegação garantida pela alta banda larga."/>
+                            <FeatureBox image={WhatsappIconW} title="Rápida velocidade" description="Velocidade rápida de navegação garantida pela alta banda larga."/>
+                        </div>
+                        <div className={styles.featuresBoxesCollumns}>
+                            <FeatureBox image={WhatsappIconW} title="Rápida velocidade" description="Velocidade rápida de navegação garantida pela alta banda larga."/>
+                            <FeatureBox image={WhatsappIconW} title="Rápida velocidade" description="Velocidade rápida de navegação garantida pela alta banda larga."/>
+                            <FeatureBox image={WhatsappIconW} title="Rápida velocidade" description="Velocidade rápida de navegação garantida pela alta banda larga."/>
+                        </div>
+                        <div className={styles.featuresBoxesCollumns}>
+                            <FeatureBox image={WhatsappIconW} title="Rápida velocidade" description="Velocidade rápida de navegação garantida pela alta banda larga."/>
+                            <FeatureBox image={WhatsappIconW} title="Rápida velocidade" description="Velocidade rápida de navegação garantida pela alta banda larga."/>
+                            <FeatureBox image={WhatsappIconW} title="Rápida velocidade" description="Velocidade rápida de navegação garantida pela alta banda larga."/>
+                        </div>
                     </div>
                 </div>
             </section>

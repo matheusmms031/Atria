@@ -1,0 +1,33 @@
+.FeatureBox{ 
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.625rem;
+    width: 16.1875rem;
+}
+
+.titleBox{
+    display: flex;
+    align-items: center;
+    gap: 0.3125rem;
+}
+
+.description{
+    color: rgba(255, 255, 255, 0.70);
+    width: 100%;
+}
+.image{
+    width: 1.25rem;
+    height: 1.25rem;
+}
+.title{
+    color: #FFF;
+
+    /* Heading 5 */
+    font-family: "Nunito";
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.9375rem; /* 193.75% */
+    letter-spacing: -0.00013rem;
+}
