@@ -15,6 +15,9 @@ import AppIcon from "../../assets/Icons/Icons=App.svg"
 import Tag from "../../components/Tag/Tag.jsx"
 import CardSecond from "../../components/CardSecond/CardSecond.jsx"
 import FeatureBox from "../../components/FeatureBox/FeatureBox"
+import Footer from "../../components/Footer/Footer.jsx"
+import PlanCard from "../../components/PlanCard/PlanCard.jsx"
+import Publish from "../../components/Publish/Publish.jsx"
 
 export default function Home(){
     return(
@@ -92,6 +95,25 @@ export default function Home(){
                     </div>
                 </div>
             </section>
+            <section className={styles.plans}>
+                <div className={styles.plansTexts}>
+                    <span className={`${styles.plansTitle} title1`}>Planos</span>
+                    <div className={styles.plansDescribe}>
+                        <span className={` bodyLarge ${styles.plansDescription}`}>Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry's.</span>
+                        <Tag>Saiba Mais</Tag>
+                    </div>
+                </div>
+                <div className={styles.plansBox}>
+                    <div className={styles.plansLines}>
+                        <PlanCard/>
+                        <PlanCard/>
+                        <PlanCard/>
+                        <PlanCard/>
+                    </div>
+                </div>
+            </section>
+            <Footer/>
+            <Publish/>
         </div>
     )
 }
