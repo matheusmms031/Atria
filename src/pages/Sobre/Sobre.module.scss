@@ -1,0 +1,90 @@
+.hero{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+    align-self: stretch;
+    background-color: #000;
+    height: 100vh;
+}
+
+.logoup{
+    width: 24.8125rem;
+    height: 23.4375rem;
+    
+}
+
+.heroContent{
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+    flex: 1 0 0;
+}
+
+.heroTexts{
+    display: flex;
+    width: 33rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.3125rem;
+}
+
+.heroTitle{
+    height: 11.5625rem;
+    align-self: stretch;
+    background: linear-gradient(180deg, #000 -12.97%, #636363 4.73%, #A8A8A8 29.79%, #FFF 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@media (min-width:720px){
+
+}
+
+
+@media (max-width:720px) {
+    .hero{
+        display: flex;
+        height: 100vh;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        align-self: stretch;
+    }
+
+    .logoup{
+        width: 24.8125rem;
+        height: 23.4375rem;
+        position: absolute;
+        right: -12.4375rem;
+        top: -6.25rem;
+        opacity: 50%;
+    }
+
+    .heroContent{
+        display: flex;
+        padding: 0rem 1.875rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 1.875rem;
+        align-self: stretch;
+    }
+
+    .heroTitle{
+        color: #FFF;
+        font-family: "DM Sans";
+        font-size: 4rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 3.125rem; /* 78.125% */
+        letter-spacing: 0rem;
+        height: auto;
+    }
+
+    .heroTexts{
+        width: 100%;
+    }
+}

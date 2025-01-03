@@ -18,7 +18,6 @@
     height: 100%;
     object-fit: cover;
     position: absolute;
-    background: linear-gradient(180deg, #000 -3.73%, rgba(0, 0, 0, 0.80) 21.68%, rgba(0, 0, 0, 0.60) 40.74%, rgba(0, 0, 0, 0.60) 76.74%, rgba(82, 80, 11, 0.74) 97.89%, #E8E120 108.5%);
 }
 
 .logosDescription{
@@ -73,7 +72,7 @@
     align-items: center;
     gap: 2rem;
     align-self: stretch;
-    background: linear-gradient(180deg, #000 -3.73%, rgba(0, 0, 0, 0.80) 21.68%, rgba(0, 0, 0, 0.60) 40.74%, rgba(0, 0, 0, 0.60) 76.74%, rgba(82, 80, 11, 0.74) 97.89%, #E8E120 108.5%);
+    background: linear-gradient(180deg, #000 -3.8%, rgba(0, 0, 0, 0.80) 21.55%, rgba(0, 0, 0, 0.60) 40.56%, rgba(0, 0, 0, 0.60) 76.46%, rgba(82, 80, 11, 0.55) 100.4%);
 }
 
 .titleFirst{
@@ -239,7 +238,7 @@
 
 .plans{
     display: flex;
-    padding: 120px 0px;
+    padding: 150px 0px;
     flex-direction: column;
     align-items: center;
     gap: 75px;

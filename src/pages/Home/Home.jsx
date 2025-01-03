@@ -10,8 +10,18 @@ import WhatsappIcon from "../../assets/Icons/Icons=Whatsapp.svg"
 import WhatsappIconW from "../../assets/Icons/Icons=Whatsapp-w.svg"
 import Card1 from "../../assets/card1.png"
 import Card2 from "../../assets/card2.png"
+
+import HomeW from "../../assets/Icons/Icons=Home-w.svg"
+import HelpW from "../../assets/Icons/Icons=Help-w.svg"
+import TvW from "../../assets/Icons/Icons=Tv-w.svg"
 import WifiIcon from "../../assets/Icons/Icons=Wifi.svg"
+import WifiIconW from "../../assets/Icons/Icons=Wifi-w.svg"
 import AppIcon from "../../assets/Icons/Icons=App.svg"
+import AppIconW from "../../assets/Icons/Icons=App-w.svg"
+import HuaweiW from "../../assets/Icons/Icons=Huawei-w.svg"
+import RouterW from "../../assets/Icons/Icons=Roteador-w.svg"
+
+
 import Tag from "../../components/Tag/Tag.jsx"
 import CardSecond from "../../components/CardSecond/CardSecond.jsx"
 import FeatureBox from "../../components/FeatureBox/FeatureBox"
@@ -27,7 +37,7 @@ export default function Home(){
                 <div className={styles.heroContent}>
                     <Tag showMore={true} >Conheça nossas vantagens</Tag>
                     <span className={styles.titleFirst}>Olá, Vila da Serra</span>
-                    <span className={`${styles.heroDescription} bodyLarge`} >Bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla.</span>
+                    <span className={`${styles.heroDescription} bodyLarge`} >Venha conhecer a Átria Digital, estamos a disposição de nossos clientes a semana toda, não perca a oportunidade de ser Átria.</span>
                     <ButtonSample onClick={() => console.log("Clicou no botão")}>Conheça nossos planos</ButtonSample>
                 </div>
                 <video autoPlay muted loop className={styles.video} src={video}/>
@@ -79,18 +89,18 @@ export default function Home(){
                     <div className={styles.featuresBoxesLines}>
                         <div className={styles.featuresBoxesCollumns}>
                             <FeatureBox image={WhatsappIconW} title="Rápida velocidade" description="Velocidade rápida de navegação garantida pela alta banda larga."/>
-                            <FeatureBox image={WhatsappIconW} title="Rápida velocidade" description="Velocidade rápida de navegação garantida pela alta banda larga."/>
-                            <FeatureBox image={WhatsappIconW} title="Rápida velocidade" description="Velocidade rápida de navegação garantida pela alta banda larga."/>
+                            <FeatureBox image={AppIconW} title="Aplicativo próprio" description="Disponibilidade de acessar seu plano atráves do aplicativo."/>
+                            <FeatureBox image={WifiIconW} title="Planos com Wifi-7" description="Wifi-7 é a versão mais recente e consolidade para performance."/>
                         </div>
                         <div className={styles.featuresBoxesCollumns}>
-                            <FeatureBox image={WhatsappIconW} title="Rápida velocidade" description="Velocidade rápida de navegação garantida pela alta banda larga."/>
-                            <FeatureBox image={WhatsappIconW} title="Rápida velocidade" description="Velocidade rápida de navegação garantida pela alta banda larga."/>
-                            <FeatureBox image={WhatsappIconW} title="Rápida velocidade" description="Velocidade rápida de navegação garantida pela alta banda larga."/>
+                            <FeatureBox image={HelpW} title="Suporte 24 horas" description="Nossa equipe está pronta para atender você a qualquer dia."/>
+                            <FeatureBox image={HomeW} title="Atendimento à domícilio" description="Atendimento diretamente no local feito por técnico especializado."/>
+                            <FeatureBox image={TvW} title="Planos com Streaming" description="Possibilidade de encaixar combos de streamings na assinatura."/>
                         </div>
                         <div className={styles.featuresBoxesCollumns}>
-                            <FeatureBox image={WhatsappIconW} title="Rápida velocidade" description="Velocidade rápida de navegação garantida pela alta banda larga."/>
-                            <FeatureBox image={WhatsappIconW} title="Rápida velocidade" description="Velocidade rápida de navegação garantida pela alta banda larga."/>
-                            <FeatureBox image={WhatsappIconW} title="Rápida velocidade" description="Velocidade rápida de navegação garantida pela alta banda larga."/>
+                            <FeatureBox image={HelpW} title="Atendimento rápido" description="Nossa equipe responde suas questões em até 3 horas."/>
+                            <FeatureBox image={HuaweiW} title="Roteadores Huawei" description="Atendimento diretamente no local feito por técnico especializado."/>
+                            <FeatureBox image={RouterW} title="Planos multi pontos" description="Dependendo do plano escolhido o cliente tem mais pontos na residência"/>
                         </div>
                     </div>
                 </div>
@@ -99,7 +109,7 @@ export default function Home(){
                 <div className={styles.plansTexts}>
                     <span className={`${styles.plansTitle} title1`}>Planos</span>
                     <div className={styles.plansDescribe}>
-                        <span className={` bodyLarge ${styles.plansDescription}`}>Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry's.</span>
+                        <span className={` bodyLarge ${styles.plansDescription}`}>Nossos planos são meticulosamente pensados para sanar cada necessidade dos nossos clientes, venha ser Átria.</span>
                         <Tag>Saiba Mais</Tag>
                     </div>
                 </div>
