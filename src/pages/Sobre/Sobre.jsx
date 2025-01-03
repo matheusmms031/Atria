@@ -15,6 +15,37 @@ export default function Sobre(){
                     </div>
                 </div>
             </section>
+            <section className={styles.family}>
+                <div className={styles.familyContent}>
+                    <img/>
+                    <div className={styles.familyTexts}>
+                        <div className={styles.familyFirstBox}>
+                            <span className="title2">Somos uma fámilia</span>
+                            <span className="bodyMedium">
+                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. 
+                                Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
+                                Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+                            </span>
+                        </div>
+                        <div className={styles.familySecondBox}>
+                            <div className={styles.familyComponent}>
+                                <img/>
+                                <span className="title5">Especialistas selecionados</span>
+                                <span className="bodySmall">
+                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. 
+                                </span>
+                            </div>
+                            <div className={styles.familyComponent}>
+                                <img/>
+                                <span className="title5">Especialistas selecionados</span>
+                                <span className="bodySmall">
+                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. 
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
     )
 }
