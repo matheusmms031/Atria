@@ -4,30 +4,7 @@ import styles from "./Footer.module.scss"
 
 export default function Footer(){
     var table = [
-        {   
-            "title":"teste1",
-            "content": [
-                {"span":"Conteudo 1","link":"http://www.google.com"},
-                {"span":"Conteudo 2","link":"http://www.google.com"},
-                {"span":"Conteudo 3","link":"http://www.google.com"},
-            ]
-        },
-        {   
-            "title":"teste1",
-            "content": [
-                {"span":"Conteudo 1","link":"http://www.google.com"},
-                {"span":"Conteudo 2","link":"http://www.google.com"},
-                {"span":"Conteudo 3","link":"http://www.google.com"},
-            ]
-        },
-        {   
-            "title":"teste1",
-            "content": [
-                {"span":"Conteudo 1","link":"http://www.google.com"},
-                {"span":"Conteudo 2","link":"http://www.google.com"},
-                {"span":"Conteudo 3","link":"http://www.google.com"},
-            ]
-        }
+        
     ]
     
     return(

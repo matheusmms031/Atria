@@ -10,7 +10,6 @@ import WhatsappIcon from "../../assets/Icons/Icons=Whatsapp.svg"
 import WhatsappIconW from "../../assets/Icons/Icons=Whatsapp-w.svg"
 import Card1 from "../../assets/card1.png"
 import Card2 from "../../assets/card2.png"
-
 import HomeW from "../../assets/Icons/Icons=Home-w.svg"
 import HelpW from "../../assets/Icons/Icons=Help-w.svg"
 import TvW from "../../assets/Icons/Icons=Tv-w.svg"
@@ -20,18 +19,19 @@ import AppIcon from "../../assets/Icons/Icons=App.svg"
 import AppIconW from "../../assets/Icons/Icons=App-w.svg"
 import HuaweiW from "../../assets/Icons/Icons=Huawei-w.svg"
 import RouterW from "../../assets/Icons/Icons=Roteador-w.svg"
-
-
 import Tag from "../../components/Tag/Tag.jsx"
 import CardSecond from "../../components/CardSecond/CardSecond.jsx"
 import FeatureBox from "../../components/FeatureBox/FeatureBox"
 import Footer from "../../components/Footer/Footer.jsx"
 import PlanCard from "../../components/PlanCard/PlanCard.jsx"
 import Publish from "../../components/Publish/Publish.jsx"
+import ScrollToTop from "../../components/ScrollToTop/ScrollToTop.jsx"
+
 
 export default function Home(){
     return(
         <div className="stack">
+            <ScrollToTop />
             <Nav/>
             <section className={styles.hero}>
                 <div className={styles.heroContent}>
@@ -42,6 +42,7 @@ export default function Home(){
                 </div>
                 <video autoPlay muted loop className={styles.video} src={video}/>
             </section>
+
             <section className={styles.logos}>
                 <div className={styles.logosContent}>
                     <span className={`${styles.logosDescription} bodySmall`} > Disponibilizamos diversos streamings 
@@ -53,6 +54,8 @@ export default function Home(){
                     </div>
                 </div>
             </section>
+
+
             <section className={styles.inovation}>
                 <div className={styles.inovationContent}>
                     <div className={styles.inovationTexts}>
@@ -68,6 +71,8 @@ export default function Home(){
                     </div>  
                 </div>
             </section>
+
+
             <section className={styles.works}>
                 <div className={styles.worksContent}>
                     <div className={styles.worksTexts}>
@@ -83,6 +88,8 @@ export default function Home(){
                     </div>
                 </div>
             </section>
+
+
             <section className={styles.features}>
                 <div className={styles.featuresContent}>
                     <span className={`${styles.featuresTitle} title2`}>Veja nossos diferenciais</span>
@@ -105,6 +112,8 @@ export default function Home(){
                     </div>
                 </div>
             </section>
+
+
             <section className={styles.plans}>
                 <div className={styles.plansTexts}>
                     <span className={`${styles.plansTitle} title1`}>Planos</span>
@@ -122,6 +131,8 @@ export default function Home(){
                     </div>
                 </div>
             </section>
+
+
             <Footer/>
             <Publish/>
         </div>

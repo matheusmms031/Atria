@@ -1,0 +1,51 @@
+.hero{
+    display: flex;
+    height: 80vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+    flex-shrink: 0;
+    align-self: stretch;
+    background: #000;
+    position: relative;
+    
+}
+
+.heroContent{
+    display: flex;
+    height: 40.6875rem;
+    align-items: center;
+    gap: 5rem;
+    z-index: 2;
+    
+}
+.heroTitles{
+    display: flex;
+    width: 43.25rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.3125rem;
+}
+
+
+.heroDescription{
+    align-self: stretch;
+    text-align: center;
+}
+
+.heroTitle{
+    text-align: center;
+    text-shadow: 0px 0px 5.8px rgba(255, 255, 255, 0.09);
+    font-family: "DM Sans";
+    font-size: 6rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 5.625rem; /* 93.75% */
+    letter-spacing: -0.39rem;
+    align-self: stretch;
+    background: linear-gradient(180deg, #000 -12.97%, #636363 4.73%, #A8A8A8 29.79%, #FFF 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

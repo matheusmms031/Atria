@@ -1,0 +1,33 @@
+.employee{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5625rem;
+}
+
+.texts{
+    display: flex;
+    padding: 0rem 0.75rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.employeeImage{
+    width: 8rem;
+    height: 8rem;
+    border-radius: 6.25rem;
+}
+
+.name{
+    color: #FFF;
+    width: 13.75rem;
+    text-align: center;
+}
+
+.job{
+    color: #929292;
+    text-align: center;
+}
+

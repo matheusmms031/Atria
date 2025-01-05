@@ -7,13 +7,13 @@ export default function Nav() {
             <img src={image} className={styles.img} />
             <div className={styles.items}>
                 <span className="bodyMedium">
-                    <NavLink to="/" className={({ isActive }) =>
+                    <NavLink to="/#" preventScrollReset className={({ isActive }) =>
                         isActive ? "selected" : "none"}>
                             Home
                     </NavLink>
                 </span>
                 <span className="bodyMedium">
-                    <NavLink to="/sobre" className={({ isActive }) =>
+                    <NavLink to="/sobre#" preventScrollReset className={({ isActive }) =>
                         isActive ? "selected" : "none"}>
                         Sobre
                     </NavLink>
