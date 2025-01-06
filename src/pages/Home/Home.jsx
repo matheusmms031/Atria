@@ -10,15 +10,19 @@ import WhatsappIcon from "../../assets/Icons/Icons=Whatsapp.svg"
 import WhatsappIconW from "../../assets/Icons/Icons=Whatsapp-w.svg"
 import Card1 from "../../assets/card1.png"
 import Card2 from "../../assets/card2.png"
+
 import HomeW from "../../assets/Icons/Icons=Home-w.svg"
 import HelpW from "../../assets/Icons/Icons=Help-w.svg"
 import TvW from "../../assets/Icons/Icons=Tv-w.svg"
+
 import WifiIcon from "../../assets/Icons/Icons=Wifi.svg"
 import WifiIconW from "../../assets/Icons/Icons=Wifi-w.svg"
 import AppIcon from "../../assets/Icons/Icons=App.svg"
+
 import AppIconW from "../../assets/Icons/Icons=App-w.svg"
 import HuaweiW from "../../assets/Icons/Icons=Huawei-w.svg"
 import RouterW from "../../assets/Icons/Icons=Roteador-w.svg"
+
 import Tag from "../../components/Tag/Tag.jsx"
 import CardSecond from "../../components/CardSecond/CardSecond.jsx"
 import FeatureBox from "../../components/FeatureBox/FeatureBox"
@@ -29,6 +33,8 @@ import ScrollToTop from "../../components/ScrollToTop/ScrollToTop.jsx"
 
 
 export default function Home(){
+    
+      
     return(
         <div className="stack">
             <ScrollToTop />

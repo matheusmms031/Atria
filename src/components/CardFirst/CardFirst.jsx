@@ -1,8 +1,8 @@
 import styles from "./CardFirst.module.scss"
 
-export function CardFirst({image, title, description}){
+export function CardFirst({image, title, description, ...rest}){
     return(
-        <div className={styles.CardFirst}>
+        <div className={styles.CardFirst} {...rest}>
             <div className={styles.BoxIcon}>
                 <img src={image} className={styles.image}/>
             </div>
