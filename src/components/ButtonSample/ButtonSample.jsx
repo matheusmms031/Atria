@@ -1,10 +1,15 @@
 import styles from "./ButtonSample.module.scss"
+import { forwardRef } from "react"
 
 
-export default function ButtonSample(props){
+const ButtonSample = forwardRef(({children, ...props}, ref) => {
     return(
-        <div className={styles.buttonsample} onClick={props.onClick}>
-            <span className="bodyBold">{props.children}</span>
+        <div className={styles.buttonsample} ref={ref} {...props}>
+            <span className="bodyBold">{children}</span>
         </div>
-    )
-}
+    );
+});
+
+
+
+export default ButtonSample;
