@@ -1,4 +1,3 @@
-import Nav from "../../components/Nav/Nav"
 import styles from "./Planos.module.scss"
 import ScrollToTop from "../../components/ScrollToTop/ScrollToTop"
 import LogoUp from "../../assets/logoup.png"
@@ -7,7 +6,6 @@ export default function Planos(){
     return(
         <div className="stack">
             <ScrollToTop/>
-            <Nav/>
 
             <section className={styles.hero}>
                 <div className={styles.heroContent}>

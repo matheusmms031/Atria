@@ -1,4 +1,3 @@
-import Nav from "../../components/Nav/Nav"
 import styles from "./Sobre.module.scss"
 import logoup from "../../assets/logoup.png"
 import family from "../../assets/family.svg"
@@ -14,7 +13,6 @@ export default function Sobre(){
     return(
         <div className="stack">
             <ScrollToTop />
-            <Nav/>
 
 
 
