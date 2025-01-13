@@ -31,4 +31,30 @@ body{
     src: url("./assets/fonts/Nunito/Nunito-VariableFont_wght.ttf") format("truetype");
   }
 
-  
+  @font-face {
+    font-family: "BDSans";
+    font-weight: 400; /* Normal */
+    src: local("BDSans"),
+      url("./assets/fonts/BDSans/BDSans-Regular.otf") format("opentype");
+  }
+
+  @font-face {
+    font-family: "BDSans";
+    font-weight: 300; /* Lighter */
+    src: local("BDSans"),
+      url("./assets/fonts/BDSans/BDSans-Thin.otf") format("opentype");
+  }
+
+  @font-face {
+    font-family: "BDSans";
+    font-weight: 900; /* Bolder */
+    src: local("BDSans"),
+      url("./assets/fonts/BDSans/BDSans-Black.otf") format("opentype");
+  }
+
+  @font-face {
+    font-family: "BDSans";
+    font-weight: 700; /* Bold */
+    src: local("BDSans"),
+      url("./assets/fonts/BDSans/BDSans-Bold.otf") format("opentype");
+  }
