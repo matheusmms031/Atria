@@ -17,6 +17,10 @@ export default function Planos(){
                
             </section>
 
+            <section className={styles.plans}>
+                
+            </section>
+
         </div>
     )
 }

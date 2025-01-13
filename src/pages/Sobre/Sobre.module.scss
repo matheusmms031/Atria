@@ -31,7 +31,6 @@
 }
 
 .heroTitle{
-    height: 11.5625rem;
     align-self: stretch;
     background: linear-gradient(180deg, #000 -12.97%, #636363 4.73%, #A8A8A8 29.79%, #FFF 100%);
     background-clip: text;
@@ -39,8 +38,86 @@
     -webkit-text-fill-color: transparent;
 }
 
+.ourValues{
+    display: flex;
+    padding: 10rem 0rem;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5625rem;
+    align-self: stretch;
+    background: #000;
+}
+
+.ourContents{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1 0 0;
+}
+
+.ourTexts{
+    display: flex;
+    width: 26.3125rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+.ourTitle{
+    line-height: 4.5rem; /* 80% */
+}
+
+.ourDescription{
+    color: #FFF;
+    text-align: justify;
+}
+
+.ourContainer{
+    display: flex;
+    padding: 3.125rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.ourRow{
+    display: flex;
+    width: 40.0625rem;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 3rem;
+}
+
+.ourElement{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    flex: 1 0 0;
+}
+
+.ourElementTitle{
+    display: flex;
+    align-items: center;
+    gap: 0.625rem;
+    align-self: stretch;
+}
 
 
+.ourElementIconContainer{
+    display: flex;
+    padding: 1rem;
+    align-items: flex-start;
+    gap: 0.625rem;
+    border-radius: 3.25rem;
+    border: 1px solid #E8E120;
+    background: var(--Grey-08, #141414);
+}
+
+.ourElementIcon{
+    width: 1.75rem;
+    height: 1.75rem;
+}
 
 @media (min-width:720px){
     .family{
@@ -59,10 +136,10 @@
     }
     .familyContent{
         display: flex;
-        width: 56.875rem;
+        width: 63rem;
         justify-content: center;
         align-items: center;
-        gap: 1.5625rem;
+        gap: 9.6rem;
     }
 
     .familyComponentTitles{
@@ -101,6 +178,11 @@
         align-items: flex-start;
         gap: 0.75rem;
         flex: 1 0 0;
+    }
+
+    .familyTitle{
+        font-size: 4rem;
+        line-height: 4rem;
     }
 
     .familyFirstBoxDescription{
@@ -144,13 +226,12 @@
     }
     
     .equipeTitle{
-        width: 22.75rem;
-        height: 7.6875rem;
+        width: 28rem;
     
         text-align: center;
     
         /* H2 */
-        font-family: "DM Sans";
+        font-family: "BDSans";
         font-size: 3.375rem;
         font-style: normal;
         font-weight: 700;
@@ -181,6 +262,45 @@
 
 
 @media (max-width:720px) {
+    .ourValues{
+        align-self: auto;
+    }
+    .ourContents{
+        display: flex;
+        width: 100vw;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 2.5rem;
+    }
+    .ourContainer{
+        display: flex;
+        padding: 1.5rem;
+        flex-direction: column;
+        align-items: center;
+        gap: 3rem;
+        align-self: stretch;
+    }
+    .ourElementTitle{
+        span{
+            font-size: 1.125rem;
+        }
+    }
+
+    .ourTexts{
+        padding: 0rem 2rem;
+        width: auto;
+    }
+    .ourTitle{
+        font-size: 2.4rem;
+        line-height: 2.4rem;
+    }
+    .ourRow{
+        flex-direction: column;
+        width: auto;
+    }
+
+
     .hero{
         display: flex;
         height: 100vh;
@@ -201,6 +321,22 @@
         opacity: 50%;
     }
 
+    .ourElementIconContainer{
+        display: flex;
+        padding: 0.8rem;
+        align-items: flex-start;
+        gap: 0.625rem;
+        border-radius: 3.25rem;
+        border: 1px solid #E8E120;
+        background: var(--Grey-08, #141414);
+
+        svg{
+            width: 1rem;
+            height: 1rem;
+        }
+    }
+    
+
     .heroContent{
         display: flex;
         padding: 0rem 1.875rem;
@@ -214,13 +350,13 @@
 
     .heroTitle{
         color: #FFF;
-        font-family: "DM Sans";
-        font-size: 4rem;
+        font-family: "BDSans";
+        font-size: 3.2rem;
         font-style: normal;
         font-weight: 700;
         line-height: 3.125rem; /* 78.125% */
         letter-spacing: 0rem;
-        height: auto;
+        height: 10rem;
     }
 
     .heroTexts{
@@ -262,11 +398,11 @@
         color: #FFF;
 
         /* H2 */
-        font-family: "DM Sans";
-        font-size: 3.375rem;
+        font-family: "BDSans";
+        font-size: 2.4rem;
         font-style: normal;
         font-weight: 700;
-        line-height: 3.4375rem; /* 101.852% */
+        line-height: 2.4rem; /* 101.852% */
         letter-spacing: -0.10125rem;
     }
 
@@ -358,8 +494,8 @@
         text-align: center;
     
         /* H2 */
-        font-family: "DM Sans";
-        font-size: 3.375rem;
+        font-family: "BDSans";
+        font-size: 3.3rem;
         font-style: normal;
         font-weight: 700;
         line-height: 3.4375rem; /* 101.852% */

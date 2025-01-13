@@ -60,7 +60,7 @@
 .heroDescription{
     color: #FFF;
     text-align: center;
-    width: 28.5625rem;
+    width: 39rem;
 }
 
 .heroContent{
@@ -76,17 +76,36 @@
 }
 
 .titleFirst{
-    width: 37.75rem;
+    width: 80rem;
+    flex-shrink: 0;
+    color: #FFF;
+    text-align: center;
+    font-family: "BDSans";
+    font-size: 6rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 5rem; /* 75.758% */
+    letter-spacing: -0.4rem;
+
+    span{
+        font-size: 4.5rem;
+    }
+}
+
+.titleFirst2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "BDSans";
     height: 15.625rem;
     flex-shrink: 0;
     color: #FFF;
     text-align: center;
-    font-family: "DM Sans";
     font-size: 10.3125rem;
     font-style: normal;
     font-weight: 700;
     line-height: 7.8125rem; /* 75.758% */
-    letter-spacing: -0.10313rem;
+    letter-spacing: -0.4rem;
 }
 
 
@@ -203,7 +222,7 @@
     justify-content: center;
     align-items: center;
     align-self: stretch;
-    background: linear-gradient(180deg, #000 0%, #3E3C09 40%, #000 100%);
+    background: #000000;
 }
 
 .featuresContent{
@@ -268,7 +287,6 @@
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    width: 290px;
     flex-direction: column;
     justify-content: center;
 }
@@ -293,6 +311,11 @@
 }
 
 @media (max-width:720px) {
+
+    .plansTitle{
+        font-size: 4.6rem;
+    }
+
     .plansLines{
         flex-direction: column;
         gap: 1rem;
@@ -308,15 +331,33 @@
     .titleFirst{
         color: #FFF;
         text-align: center;
-        width: 376px;
+        width: 100vw;
 
         /* H1 */
-        font-family: "DM Sans";
-        font-size: 5.625rem;
+        font-family: "BDSans";
+        font-size: 3rem;
         font-style: normal;
         font-weight: 700;
-        line-height: 5.625rem; /* 100% */
-        letter-spacing: -0.36563rem;
+        line-height: 2.5rem; /* 100% */
+        letter-spacing: -0.2rem;
+        height: fit-content;
+        span{
+            font-size: 2.5rem;
+        }
+    }
+
+    .titleFirst2{
+        color: #FFF;
+        text-align: center;
+        width: 100vw;
+
+        /* H1 */
+        font-family: "BDSans";
+        font-size: 4rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 3rem; /* 100% */
+        letter-spacing: -0.4rem;
         height: fit-content;
     }
 
@@ -413,10 +454,11 @@
 
     .featuresTitle{
         width: 21.625rem;
-        font-size: 3.375rem;
         text-align: center;
         font-weight: 700;
-        line-height: 3.4375rem; /* 101.852% */
+        font-size: 2.4rem;
+        line-height: 2.4rem;
         letter-spacing: -0.10125rem;
+
     }
 }

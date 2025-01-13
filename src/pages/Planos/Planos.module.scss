@@ -22,22 +22,23 @@
 }
 .heroTitles{
     display: flex;
-    width: 43.25rem;
+    width: 70rem;
     flex-direction: column;
     align-items: flex-start;
-    gap: 1.3125rem;
+    align-items: center;
+    gap: 1.8rem;
 }
 
 
 .heroDescription{
-    align-self: stretch;
     text-align: center;
+    width: 50rem;
 }
 
 .heroTitle{
     text-align: center;
     text-shadow: 0px 0px 5.8px rgba(255, 255, 255, 0.09);
-    font-family: "DM Sans";
+    font-family: "BDSans";
     font-size: 6rem;
     font-style: normal;
     font-weight: 700;
@@ -48,4 +49,24 @@
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+@media (max-width:720px) {
+    .heroTitles{
+        width: fit-content;
+    }
+    .heroTitle{
+        font-size: 3rem;
+        line-height: 3.625rem;
+        text-align: left;
+    }
+    .heroContent{
+        width: fit-content;
+        padding: 0rem 1.875rem;
+    }
+
+    .heroDescription{
+        width: fit-content;
+        text-align: left;
+    }
 }
