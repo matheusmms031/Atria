@@ -36,9 +36,6 @@ export default function Footer(){
             <span className={styles.mobile}>
                 @ 2024 Átria Digital. Todos os direitos reservados
             </span>
-            <span className={styles.mobile}>
-            Desenvolvido por Matheus Magalhães
-            </span>
         </div>
     )
 }
