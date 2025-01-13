@@ -1,9 +1,11 @@
 import ArrowIcon from "../../assets/Icons/Icons=Arrow-w.svg"
 import styles from "./Tag.module.scss"
+import { forwardRef } from "react"
 
-export default function Tag({children,showMore=false,more="Leia mais"}){
+const Tag = forwardRef(({children,showMore=false,more="Leia mais", ...props}, ref) => {
+    
     return(
-        <div className={styles.tag}>
+        <div className={styles.tag} {...props} ref={ref}>
             <div className={styles.tagContent}>
                 <span className={styles.tagInfo}>{children}</span>
                 {
@@ -17,4 +19,6 @@ export default function Tag({children,showMore=false,more="Leia mais"}){
             </div>
         </div>
     )
-}
+})
+
+export default Tag;
