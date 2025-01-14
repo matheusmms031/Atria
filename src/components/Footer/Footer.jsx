@@ -1,6 +1,8 @@
 import logo from "../../assets/logo_linear.png"
 import styles from "./Footer.module.scss"
-
+import Instagram from "../../assets/Icons/Property 1=Instagram.svg"
+import X from "../../assets/Icons/Property 1=X.svg"
+import Link from "../../assets/Icons/Property 1=LinkedIn.svg"
 
 export default function Footer(){
     var table = [
@@ -16,6 +18,14 @@ export default function Footer(){
                         <span className={styles.desc}>
                             Faça diferente e escolha o melhor para você e sua fámilia, escolha já a Átria Digital.
                         </span>
+                    </div>
+                    <div className={styles.socialMedia}>
+                        <a href="https://www.instagram.com/atriadigitalbr/">
+                            <img src={Instagram} alt="Instagram" className={styles.socialIcon}/>
+                        </a>
+                        <a href="https://www.instagram.com/atriadigitalbr/">
+                            <img src={X} alt="Instagram" className={styles.socialIcon}/>
+                        </a>
                     </div>
                 </div>
                 <div className={styles.secondBox}>
@@ -33,6 +43,10 @@ export default function Footer(){
                     }
                 </div>
             </div>
+            <span className={styles.desc2}>
+                Avenida Luiz Paulo Franco, 603 <br/>
+                Belvedere 
+            </span>
             <span className={styles.mobile}>
                 @ 2024 Átria Digital. Todos os direitos reservados
             </span>
