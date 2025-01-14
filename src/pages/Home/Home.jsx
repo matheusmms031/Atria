@@ -1,7 +1,6 @@
-import { useState, useEffect, useRef} from 'react'
+import { useState, useRef, useLayoutEffect} from 'react'
 import styles from "./Home.module.scss"
 import video from "../../assets/fundo.mp4"
-import ButtonSample from "../../components/ButtonSample/ButtonSample.jsx"
 import { CardFirst } from "../../components/CardFirst/CardFirst"
 
 
@@ -32,91 +31,67 @@ import CardSecond from "../../components/CardSecond/CardSecond.jsx"
 import FeatureBox from "../../components/FeatureBox/FeatureBox"
 import Footer from "../../components/Footer/Footer.jsx"
 import PlanCard from "../../components/PlanCard/PlanCard.jsx"
-import Publish from "../../components/Publish/Publish.jsx"
 import ScrollToTop from "../../components/ScrollToTop/ScrollToTop.jsx"
 
 import gsap from 'gsap'
 import ScrollTrigger from 'gsap/ScrollTrigger'
+import { useNavigate } from 'react-router'
 
 gsap.registerPlugin(ScrollTrigger);
 
 export default function Home(){
+    let navigate = useNavigate()
+
     const TitleRef = useRef(null)
     const TagRef = useRef(null)
     const DescRef = useRef(null)
-    const boxRef = useRef(null)
-
     const ButtonRef = useRef(null)
     const tl = gsap.timeline()
     const [count, setCount] = useState(0)
 
-    const handleMouseEnter = () => {
-        gsap.to(ButtonRef.current, {
-          scale: 1.2,
-          duration: 0.3,
-          backgroundColor: "#E8E120",
-          ease: "power1.out",
-        });
-      };
-    
-      const handleMouseLeave = () => {
-        gsap.to(ButtonRef.current, {
-          scale: 1,
-          duration: 0.3,
-          backgroundColor: "#ffffff",
-          ease: "power1.out",
-        });
-      };
-
-    useEffect(() => {
+    useLayoutEffect(() => {
 
         gsap.fromTo(TagRef.current, {opacity:0, x: 200}, {opacity:1, x: 0, duration: 1, ease: "power3.out",});
         gsap.fromTo(TitleRef.current, {opacity:0, x: 200}, {opacity:1, x: 0, duration: 1, ease: "power3.out",delay: 0.20});
         gsap.fromTo(DescRef.current, {opacity:0, x: 200}, {opacity:1, x: 0, duration: 1, ease: "power3.out" , delay: 0.40});
         gsap.fromTo(ButtonRef.current, {opacity:0, x: 200}, {opacity:1, x: 0, duration: 1, ease: "power3.out" , delay: 0.60});
 
+        gsap.utils.toArray(".fade-in").forEach((element) => {
         gsap.fromTo(
-            boxRef.current,
+            element,
             { opacity: 0, y: 100 }, // Estado inicial
             {
               opacity: 1,
               y: 0,
-              duration: 1.5,
+              duration: 1,
               ease: "power3.out",
               scrollTrigger: {
-                trigger: boxRef.current, // Elemento que dispara o ScrollTrigger
+                trigger:element, // Elemento que dispara o ScrollTrigger
                 start: "top 80%", // Quando a parte superior do gatilho atinge 80% da altura da viewport
-                end: "top 20%", // Fim da animação
-                scrub: true, // Sincroniza a animação com o scroll
+                end: "bottom 40%", // Fim da animação
+                scrub:true,
+                
               },
             }
-          );
+          );});
     })
-    
+
+
 
     return(
         <div className="stack">
             <ScrollToTop />
             <section className={styles.hero}>
                 <div className={styles.heroContent}>
-                    <Tag showMore={true} ref={TagRef}>Conheça nossas vantagens</Tag>
                     <span className={styles.titleFirst} ref={TitleRef}>Internet de verdade <br/><span>como você nunca viu.</span></span>
-                    <span className={`${styles.heroDescription} bodyLarge`} ref={DescRef} >Seja premium com a Atria Digital: tecnologia de última geração e atendimento de alto
-                    padrão.</span>
-                    <ButtonSample 
-                        onClick={() => console.log("Clicou no botão")} 
-                        ref={ButtonRef} 
-                        onMouseEnter={handleMouseEnter}
-                        onMouseLeave={handleMouseLeave}
-                        >
-                            Conheça nossos planos
-                    </ButtonSample>
+                    <span className={`${styles.heroDescription} bodyLarge`} ref={DescRef} >Tecnologia de última geração e atendimento de alto
+                    padrão. <br/> Seja premium com a Atria Digital.</span>
                 </div>
                 <video autoPlay muted loop className={styles.video} src={video}/>
             </section>
 
             <section className={styles.features}>
-                <div className={styles.featuresContent}>
+                <div className={`${styles.featuresContent}`}>
                     <span className={`${styles.featuresTitle} title2`}>Veja nossos diferenciais</span>
                     <div className={styles.featuresBoxesLines}>
                         <div className={styles.featuresBoxesCollumns}>
@@ -140,7 +115,7 @@ export default function Home(){
 
 
             <section className={styles.inovation}>
-                <div className={styles.inovationContent}>
+                <div className={`${styles.inovationContent}`}>
                     <div className={styles.inovationTexts}>
                         <span className={`${styles.inovationTitle} title2`}> Viemos para inovar </span>
                         <span className={`${styles.inovationDescription} bodyLarge`}>
@@ -158,7 +133,7 @@ export default function Home(){
 
             <section className={styles.works}>
                 <div className={styles.worksContent}>
-                    <div className={styles.worksTexts}>
+                    <div className={`${styles.worksTexts}`}>
                         <Tag>Tudo que você precisa</Tag>
                         <div className={styles.worksTitles}>
                             <span className={`${styles.worksTitle} title2`}>Faça suas atividades <br/> com tranquilidade</span>
@@ -174,7 +149,7 @@ export default function Home(){
 
 
             <section className={styles.plans}>
-                <div className={styles.plansTexts}>
+                <div className={`${styles.plansTexts}`}>
                     <span className={`${styles.plansTitle} title1`}>Planos</span>
                     <div className={styles.plansDescribe}>
                         <span className={` bodyLarge ${styles.plansDescription}`}>Nossos planos são meticulosamente pensados para sanar cada necessidade dos nossos clientes, venha ser Átria.</span>
@@ -183,10 +158,50 @@ export default function Home(){
                 </div>
                 <div className={styles.plansBox}>
                     <div className={styles.plansLines}>
-                        <PlanCard/>
-                        <PlanCard/>
-                        <PlanCard/>
-                        <PlanCard/>
+                        <PlanCard 
+                            title="Básico"
+                            price="600 Mbp/s"
+                            features={[
+                                {"title":"Wifi-6"},
+                                {"title":"Atendimento 24 horas"},
+                            ]}  
+                        />
+                        <PlanCard
+                            title="Padrão"
+                            price="800 Mbp/s"
+                            features={[
+                                {"title":"1 Ponto adicional"},
+                                {"title":"Wifi-6"},
+                                {"title":"Atendimento 24 horas"},
+                            ]}  
+                        />
+                        <PlanCard
+                            title="Gamer"
+                            price="1 Gbp/s"
+                            features={[
+                                {"title":"1 Ponto adicional"},
+                                {"title":"NAT aberto"},
+                                {"title":"IP fixo"},
+                                {"title":"Atendimento prioritário"},
+                                {"title":"SLA até 6 horas"},
+                                {"title":"NoPing"},
+                                {"title":"Wifi-6"},
+                                {"title":"Atendimento 24 horas"},
+                            ]}
+                        />
+                        <PlanCard
+                            title="Exclusivo"
+                            price="2 Gbp/s"
+                            features={[
+                                {"title":"2 Pontos adicionais"},
+                                {"title":"NAT aberto"},
+                                {"title":"IP fixo"},
+                                {"title":"Atendimento prioritário"},
+                                {"title":"SLA até 4 horas"},
+                                {"title":"Wifi-7"},
+                                {"title":"Atendimento 24 horas"},
+                            ]}
+                        />
                     </div>
                 </div>
             </section>
