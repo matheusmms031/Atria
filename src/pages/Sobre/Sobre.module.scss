@@ -69,7 +69,7 @@
 
 .ourDescription{
     color: #FFF;
-    text-align: justify;
+    text-align: left;
 }
 
 .ourContainer{
@@ -101,6 +101,67 @@
     align-items: center;
     gap: 0.625rem;
     align-self: stretch;
+}
+
+.porque{
+    display: flex;
+    padding: 6.25rem 0rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5.3125rem;
+    align-self: stretch;
+    background: linear-gradient(180deg, #000 0%, #252408 55.5%, #000 100%);
+}
+
+.porqueContent{
+    display: flex;
+    width: 58rem;
+    align-items: center;
+    gap: 3.375rem;
+}
+
+.porqueTitles{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1.875rem;
+}
+
+.porqueTitle{
+    width: 28.3125rem;
+    height: 10.8rem;
+    /* H2 */
+    font-family: "BDSans";
+    font-size: 3.375rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 3.4375rem; /* 101.852% */
+    letter-spacing: -0.10125rem;
+    background: linear-gradient(180deg, #FFF 0%, #E1DE7B 79.5%, #E8E120 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.porqueDescription{
+    width: 35.9375rem;
+    color: #FFF;
+    text-align: left;
+    /* Body Large */
+    font-family: Nunito;
+    font-size: 1.375rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.9375rem; /* 140.909% */
+    letter-spacing: -0.0495rem;
+}
+
+.porqueImage{
+    width: 15.8125rem;
+    height: 14.9375rem;
+    flex-shrink: 0;
 }
 
 
@@ -163,7 +224,7 @@
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        gap: 0.625rem;
+        gap: 1.3rem;
     }
     .familySecondBox{
         display: flex;
@@ -183,6 +244,7 @@
     .familyTitle{
         font-size: 4rem;
         line-height: 4rem;
+        margin-left: -5px;
     }
 
     .familyFirstBoxDescription{
@@ -275,7 +337,7 @@
     }
     .ourContainer{
         display: flex;
-        padding: 1.5rem;
+        padding: 1.875rem;
         flex-direction: column;
         align-items: center;
         gap: 3rem;
@@ -285,11 +347,23 @@
         span{
             font-size: 1.125rem;
         }
+        flex-direction: column;
+        align-self: auto;
+    }
+    .ourDescription{
+        text-align: center;
+    }
+    .ourElement{
+        align-items: center;
+    }
+    .ourElementDescription{
+        text-align: center;
     }
 
     .ourTexts{
         padding: 0rem 2rem;
         width: auto;
+        align-items: center;
     }
     .ourTitle{
         font-size: 2.4rem;
@@ -335,7 +409,22 @@
             height: 1rem;
         }
     }
-    
+
+    .porqueContent{
+        flex-direction: column;
+        width: auto;
+        padding: 0px 30px;
+    }
+    .porqueDescription{
+        width: auto;
+        text-align: center;
+        font-size: 1rem;
+        line-height: 1.3rem;
+    }
+    .porqueTitle{
+        width: auto;
+        
+    }
 
     .heroContent{
         display: flex;
