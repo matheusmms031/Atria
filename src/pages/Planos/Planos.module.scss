@@ -51,6 +51,112 @@
     -webkit-text-fill-color: transparent;
 }
 
+.plans{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8rem;
+    flex-shrink: 0;
+    align-self: stretch;
+    background: linear-gradient(180deg, #000 0%, #222406 52.5%, #000 98%);
+    padding-bottom: 12rem;
+}
+
+.plansContent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 2.25rem;
+    flex-wrap: wrap;
+}
+
+.plansFirstBox{
+    display: flex;
+    width: 30.8125rem;
+    padding: 2.8125rem 2.375rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.1875rem;
+
+}
+
+.plansTitleBox{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.plansTitle{
+    text-align: left;
+    margin-left: -6px;
+    color: #FFF;
+    font-weight: 700;
+    line-height: 4rem; /* 101.852% */
+    letter-spacing: -0.10125rem;
+}
+
+.plansPlan{
+    color: #FFF;
+    /* Body Large */
+    font-family: Nunito;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 0.1rem; /* 140.909% */
+    letter-spacing: -0.0495rem;
+}
+.plansVelocity{
+    color: rgba(255, 255, 255, 0.80);
+    font-family: Nunito;
+    font-size: 1.3rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.4375rem; /* 143.75% */
+    letter-spacing: -0.01rem;
+}
+
+
+.plansSecondBox{
+    display: flex;
+    padding: 3.5rem 1.875rem;
+    align-items: center;
+}
+
+.plansRow{
+    display: flex;
+    width: 16.875rem;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.plansComponent{
+    display: flex;
+    height: 9.3rem;
+    padding: 0.625rem 1.25rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.625rem;
+    align-self: stretch;
+}
+
+.plansComponentTitle{
+    display: flex;
+    padding: 0rem 0.4375rem;
+    align-items: center;
+    gap: 0.625rem;
+    align-self: stretch;
+}
+
+.plansComponentIcon{
+    width: 1.25rem;
+    height: 1.25rem;
+}
+.plansComponentDescription{
+    text-align: left;
+}
+
+
 @media (max-width:720px) {
     .heroTitles{
         width: fit-content;
@@ -68,5 +174,38 @@
     .heroDescription{
         width: fit-content;
         text-align: left;
+    }
+
+    .plansContent{
+        display: flex;
+        padding: 2rem 1.875rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2.25rem;
+        align-self: stretch;
+    }
+    .plansFirstBox{
+        width: 100%;
+        padding: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.9375rem;
+        align-self: stretch;
+        padding: 0rem;
+    }
+    .plansTitle{
+        font-size: 3rem;
+    }
+    .plansSecondBox{
+        flex-direction: column;
+        padding: 0px;
+    }
+    .plans{
+        gap: 8rem;
+    }
+    .plansRow{
+        width: 80vw;
     }
 }

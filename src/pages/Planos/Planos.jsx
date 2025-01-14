@@ -1,6 +1,8 @@
 import styles from "./Planos.module.scss"
 import ScrollToTop from "../../components/ScrollToTop/ScrollToTop"
 import LogoUp from "../../assets/logoup.png"
+import ButtonSample from "../../components/ButtonSample/ButtonSample"
+import Footer from "../../components/Footer/Footer"
 
 export default function Planos(){
     return(
@@ -10,17 +12,283 @@ export default function Planos(){
             <section className={styles.hero}>
                 <div className={styles.heroContent}>
                     <div className={styles.heroTitles}>
-                        <span className={styles.heroTitle}>Veja detalhes dos nossos planos</span>
-                        <span className={`${styles.heroDescription} bodyLarge`}>Estamos trazendo aos bairros mais luxuosos de Belo Horizonte a melhor das experiências de conectividade de toda a região da alta classe.</span>
+                        <span className={styles.heroTitle}>Detalhes dos nossos planos</span>
+                        <span className={`${styles.heroDescription} bodyLarge`}>
+                            Cada plano foi pensado para oferecer soluções específicas, atendendo desde pequenas demandas até as necessidades mais avançadas. 
+                            Escolha a Átria Digital e conecte-se ao que há de melhor.
+                        </span>
                     </div>
                 </div>
-               
             </section>
+
 
             <section className={styles.plans}>
-                
+                <div className={styles.plansContent}>
+                    <div className={styles.plansFirstBox}>
+                        <div className={styles.plansTitleBox}>
+                            <span className={styles.plansPlan}>Plano</span>
+                            <span className={`${styles.plansTitle} title2`}>Básico</span>
+                            <span className={styles.plansVelocity}>600 Mbp/s</span>
+                        </div>
+                        <span className={`${styles.plansDescription} bodyLarge`}>
+                        Ideal para pequenos negócios e flats, o Plano Básico oferece conectividade confiável e eficiente, garantindo o desempenho necessário para atividades cotidianas. 
+                        </span>
+                        <ButtonSample style={{alignSelf:"stretch"}} onClick={() => {window.open(`https://api.whatsapp.com/send?phone=5523331401&text=Estou interessado pelo plano Básico`,"_blank")}}>
+                            Assine já
+                        </ButtonSample>
+                    </div>
+                    <div className={styles.plansSecondBox}>
+                        <div className={styles.plansRow}>
+                            <div className={styles.plansComponent}>
+                                <div className={styles.plansComponentTitle}>
+                                    <img src={LogoUp} alt="Logo Up" className={styles.plansComponentIcon}/>
+                                    <span className={`${styles.plansComponentTitle} bodyLarge`}>600 Mega</span>
+                                </div>
+                                <span className={`${styles.plansComponentDescription} bodyMedium`}>
+                                    Conexão estável para navegação, videochamadas e sistemas básicos de automação.
+                                </span>
+                            </div>
+                            <div className={styles.plansComponent}>
+                                <div className={styles.plansComponentTitle}>
+                                    <img src={LogoUp} alt="Logo Up" className={styles.plansComponentIcon}/>
+                                    <span className={`${styles.plansComponentTitle} bodyLarge`}>Roteador Wi-Fi 6</span>
+                                </div>
+                                <span className={`${styles.plansComponentDescription} bodyMedium`}>
+                                    Tecnologia de ponta para maior alcance e performance em ambientes menores.
+                                </span>
+                            </div>
+                        </div>
+                        <div className={styles.plansRow}>
+                            <div className={styles.plansComponent}>
+                                <div className={styles.plansComponentTitle}>
+                                    <img src={LogoUp} alt="Logo Up" className={styles.plansComponentIcon}/>
+                                    <span className={`${styles.plansComponentTitle} bodyLarge`}>Atendimento 24h</span>
+                                </div>
+                                <span className={`${styles.plansComponentDescription} bodyMedium`}>
+                                    Suporte técnico disponível a qualquer momento, para sua tranquilidade e conveniência.
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section className={styles.plans}>
+                <div className={styles.plansContent}>
+                    <div className={styles.plansFirstBox}>
+                        <div className={styles.plansTitleBox}>
+                            <span className={styles.plansPlan}>Plano</span>
+                            <span className={`${styles.plansTitle} title2`}>Padrão</span>
+                            <span className={styles.plansVelocity}>800 Mbp/s</span>
+                        </div>
+                        <span className={`${styles.plansDescription} bodyLarge`}>
+                        Perfeito para residências conectadas, esse plano atende às necessidades de streaming em alta definição, múltiplos dispositivos e automação básica.
+
+                        </span>
+                        <ButtonSample style={{alignSelf:"stretch"}} onClick={() => {window.open(`https://api.whatsapp.com/send?phone=5523331401&text=Estou interessado pelo plano Padrão`,"_blank")}}>
+                            Assine já
+                        </ButtonSample>
+                    </div>
+                    <div className={styles.plansSecondBox}>
+                        <div className={styles.plansRow}>
+                            <div className={styles.plansComponent}>
+                                <div className={styles.plansComponentTitle}>
+                                    <img src={LogoUp} alt="Logo Up" className={styles.plansComponentIcon}/>
+                                    <span className={`${styles.plansComponentTitle} bodyLarge`}>800 Mega</span>
+                                </div>
+                                <span className={`${styles.plansComponentDescription} bodyMedium`}>
+                                    Ideal para streaming em HD, chamadas de vídeo de alta qualidade e uso simultâneo de dispositivos.
+                                </span>
+                            </div>
+                            <div className={styles.plansComponent}>
+                                <div className={styles.plansComponentTitle}>
+                                    <img src={LogoUp} alt="Logo Up" className={styles.plansComponentIcon}/>
+                                    <span className={`${styles.plansComponentTitle} bodyLarge`}>Wi-Fi 6</span>
+                                </div>
+                                <span className={`${styles.plansComponentDescription} bodyMedium`}>
+                                    Tecnologia moderna para garantir uma conexão estável e eficiente em toda a residência.
+                                </span>
+                            </div>
+                        </div>
+                        <div className={styles.plansRow}>
+                            <div className={styles.plansComponent}>
+                                <div className={styles.plansComponentTitle}>
+                                    <img src={LogoUp} alt="Logo Up" className={styles.plansComponentIcon}/>
+                                    <span className={`${styles.plansComponentTitle} bodyLarge`}>Ponto Adicional Mesh</span>
+                                </div>
+                                <span className={`${styles.plansComponentDescription} bodyMedium`}>
+                                Cobertura Wi-Fi ampliada, garantindo conexão de alta qualidade em todos os cômodos.
+                                </span>
+                            </div>
+                            <div className={styles.plansComponent}>
+                                <div className={styles.plansComponentTitle}>
+                                    <img src={LogoUp} alt="Logo Up" className={styles.plansComponentIcon}/>
+                                    <span className={`${styles.plansComponentTitle} bodyLarge`}>Atendimento 24h</span>
+                                </div>
+                                <span className={`${styles.plansComponentDescription} bodyMedium`}>
+                                    Atendimento disponível a qualquer momento do seu dia.
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section className={styles.plans}>
+                <div className={styles.plansContent}>
+                    <div className={styles.plansFirstBox}>
+                        <div className={styles.plansTitleBox}>
+                            <span className={styles.plansPlan}>Plano</span>
+                            <span className={`${styles.plansTitle} title2`}>Gamer</span>
+                            <span className={styles.plansVelocity}>1 Gbp/s</span>
+                        </div>
+                        <span className={`${styles.plansDescription} bodyLarge`}>
+                            Projetado especialmente para gamers e usuários exigentes, o Plano Gamer oferece velocidade e desempenho incomparáveis. 
+                        </span>
+                        <ButtonSample style={{alignSelf:"stretch"}} onClick={() => {window.open(`https://api.whatsapp.com/send?phone=5523331401&text=Estou interessado pelo plano Gamer`,"_blank")}}>
+                            Assine já
+                        </ButtonSample>
+                    </div>
+                    <div className={styles.plansSecondBox}>
+                        <div className={styles.plansRow}>
+                            <div className={styles.plansComponent}>
+                                <div className={styles.plansComponentTitle}>
+                                    <img src={LogoUp} alt="Logo Up" className={styles.plansComponentIcon}/>
+                                    <span className={`${styles.plansComponentTitle} bodyLarge`}>1 Giga</span>
+                                </div>
+                                <span className={`${styles.plansComponentDescription} bodyMedium`}>
+                                    Conexão ultrarrápida para jogos online, streaming 4K e múltiplos dispositivos.
+                                </span>
+                            </div>
+                            <div className={styles.plansComponent}>
+                                <div className={styles.plansComponentTitle}>
+                                    <img src={LogoUp} alt="Logo Up" className={styles.plansComponentIcon}/>
+                                    <span className={`${styles.plansComponentTitle} bodyLarge`}>Wi-Fi 6</span>
+                                </div>
+                                <span className={`${styles.plansComponentDescription} bodyMedium`}>
+                                    Tecnologia de ponta para maior alcance e performance em ambientes menores.
+                                </span>
+                            </div>
+                            <div className={styles.plansComponent}>
+                                <div className={styles.plansComponentTitle}>
+                                    <img src={LogoUp} alt="Logo Up" className={styles.plansComponentIcon}/>
+                                    <span className={`${styles.plansComponentTitle} bodyLarge`}>IP Fixo</span>
+                                </div>
+                                <span className={`${styles.plansComponentDescription} bodyMedium`}>
+                                    Segurança e facilidade para configurar servidores ou aplicações específicas.
+                                </span>
+                            </div>
+                        </div>
+                        <div className={styles.plansRow}>
+                            <div className={styles.plansComponent}>
+                                <div className={styles.plansComponentTitle}>
+                                    <img src={LogoUp} alt="Logo Up" className={styles.plansComponentIcon}/>
+                                    <span className={`${styles.plansComponentTitle} bodyLarge`}>NoPing</span>
+                                </div>
+                                <span className={`${styles.plansComponentDescription} bodyMedium`}>
+                                    Redução de latência para jogos online e partidas sem restrições.
+                                </span>
+                            </div>
+                            <div className={styles.plansComponent}>
+                                <div className={styles.plansComponentTitle}>
+                                    <img src={LogoUp} alt="Logo Up" className={styles.plansComponentIcon}/>
+                                    <span className={`${styles.plansComponentTitle} bodyLarge`}>SLA de 6h</span>
+                                </div>
+                                <span className={`${styles.plansComponentDescription} bodyMedium`}>
+                                    Atendimento técnico prioritário com resolução no local em até 6 horas.
+                                </span>
+                            </div>
+                            <div className={styles.plansComponent}>
+                                <div className={styles.plansComponentTitle}>
+                                    <img src={LogoUp} alt="Logo Up" className={styles.plansComponentIcon}/>
+                                    <span className={`${styles.plansComponentTitle} bodyLarge`}>NAT Aberto</span>
+                                </div>
+                                <span className={`${styles.plansComponentDescription} bodyMedium`}>
+                                    Partidas online sem restrições, conexões mais rápidas e menor latência, garantindo máxima performance.
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section className={styles.plans}>
+                <div className={styles.plansContent}>
+                    <div className={styles.plansFirstBox}>
+                        <div className={styles.plansTitleBox}>
+                            <span className={styles.plansPlan}>Plano</span>
+                            <span className={`${styles.plansTitle} title2`}>Exclusivo</span>
+                            <span className={styles.plansVelocity}>2 Gbp/s</span>
+                        </div>
+                        <span className={`${styles.plansDescription} bodyLarge`}>
+                        O Plano Exclusivo é o ápice da conectividade.
+                         Desenvolvido para clientes que exigem o máximo em desempenho e atendimento, combina a tecnologia mais avançada com suporte prioritário. 
+                        </span>
+                        <ButtonSample style={{alignSelf:"stretch"}} onClick={() => {window.open(`https://api.whatsapp.com/send?phone=5523331401&text=Estou interessado pelo plano Exclusivo`,"_blank")}}> 
+                            Assine já
+                        </ButtonSample>
+                    </div>
+                    <div className={styles.plansSecondBox}>
+                        <div className={styles.plansRow}>
+                            <div className={styles.plansComponent}>
+                                <div className={styles.plansComponentTitle}>
+                                    <img src={LogoUp} alt="Logo Up" className={styles.plansComponentIcon}/>
+                                    <span className={`${styles.plansComponentTitle} bodyLarge`}>2 Giga</span>
+                                </div>
+                                <span className={`${styles.plansComponentDescription} bodyMedium`}>
+                                    Conexão ultrarrápida para streaming em 8K, jogos online de alto desempenho e automação residencial avançada.
+                                </span>
+                            </div>
+                            <div className={styles.plansComponent}>
+                                <div className={styles.plansComponentTitle}>
+                                    <img src={LogoUp} alt="Logo Up" className={styles.plansComponentIcon}/>
+                                    <span className={`${styles.plansComponentTitle} bodyLarge`}>Wi-Fi 7</span>
+                                </div>
+                                <span className={`${styles.plansComponentDescription} bodyMedium`}>
+                                O mais moderno padrão de Wi-Fi, garantindo maior alcance, velocidade e eficiência.
+                                </span>
+                            </div>
+                            <div className={styles.plansComponent}>
+                                <div className={styles.plansComponentTitle}>
+                                    <img src={LogoUp} alt="Logo Up" className={styles.plansComponentIcon}/>
+                                    <span className={`${styles.plansComponentTitle} bodyLarge`}>Atendimento Prioritário</span>
+                                </div>
+                                <span className={`${styles.plansComponentDescription} bodyMedium`}>
+                                    Acesso direto ao suporte técnico sem passar por call center.
+                                </span>
+                            </div>
+                        </div>
+                        <div className={styles.plansRow}>
+                            <div className={styles.plansComponent}>
+                                <div className={styles.plansComponentTitle}>
+                                    <img src={LogoUp} alt="Logo Up" className={styles.plansComponentIcon}/>
+                                    <span className={`${styles.plansComponentTitle} bodyLarge`}>2 Pontos Adicionais</span>
+                                </div>
+                                <span className={`${styles.plansComponentDescription} bodyMedium`}>
+                                    Cobertura impecável para grandes residências e ambientes de alta demanda.
+                                </span>
+                            </div>
+                            <div className={styles.plansComponent}>
+                                <div className={styles.plansComponentTitle}>
+                                    <img src={LogoUp} alt="Logo Up" className={styles.plansComponentIcon}/>
+                                    <span className={`${styles.plansComponentTitle} bodyLarge`}>Noping</span>
+                                </div>
+                                <span className={`${styles.plansComponentDescription} bodyMedium`}>
+                                Experiência otimizada para jogos online e acesso irrestrito a servidores.
+                                </span>
+                            </div>
+                            <div className={styles.plansComponent}>
+                                <div className={styles.plansComponentTitle}>
+                                    <img src={LogoUp} alt="Logo Up" className={styles.plansComponentIcon}/>
+                                    <span className={`${styles.plansComponentTitle} bodyLarge`}>IP Fixo</span>
+                                </div>
+                                <span className={`${styles.plansComponentDescription} bodyMedium`}>
+                                    Mais segurança e controle para suas aplicações
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
 
+            <Footer/>
         </div>
     )
 }
