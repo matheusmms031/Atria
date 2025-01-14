@@ -9,15 +9,14 @@ var list = [
     {"title":"Keyword optimization"},
 ]
 
-export default function PlanCard({title="Pro",price="$79/mo",velocity="500 Mb/s",features=list,link=""}){
+export default function PlanCard({title="Pro",price="$79/mo",velocity="500 Mb/s",features=list,link="", ...props}){
     return(
-        <div className={styles.planCard}>
+        <div className={styles.planCard} {...props}>
             <div className={styles.titles}>
                 <div className={styles.titleBox}>
                     <span className={styles.title}>{title}</span>
                     <span className={styles.price}>{price}</span> 
                 </div>
-                <span className={styles.velocity}>{velocity}</span>
             </div>
             <div className={styles.imageDiv}>
                 <div>
@@ -40,7 +39,7 @@ export default function PlanCard({title="Pro",price="$79/mo",velocity="500 Mb/s"
                     
                     }
                 </div>
-                <div className={styles.button}>
+                <div className={styles.button} onClick={() => {window.open(`https://api.whatsapp.com/send?phone=5523331401&text=Estou interessado pelo plano ${title}`,"_blank")}}>
                     <span className="bodyMedium">Assine já</span>
                 </div>
             </div>
