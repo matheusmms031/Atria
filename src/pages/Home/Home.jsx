@@ -1,4 +1,4 @@
-import { useState, useRef, useLayoutEffect} from 'react'
+import { useRef, useLayoutEffect} from 'react'
 import styles from "./Home.module.scss"
 import video from "../../assets/fundo.mp4"
 import { CardFirst } from "../../components/CardFirst/CardFirst"
@@ -35,19 +35,15 @@ import ScrollToTop from "../../components/ScrollToTop/ScrollToTop.jsx"
 
 import gsap from 'gsap'
 import ScrollTrigger from 'gsap/ScrollTrigger'
-import { useNavigate } from 'react-router'
 
 gsap.registerPlugin(ScrollTrigger);
 
 export default function Home(){
-    let navigate = useNavigate()
 
     const TitleRef = useRef(null)
     const TagRef = useRef(null)
     const DescRef = useRef(null)
     const ButtonRef = useRef(null)
-    const tl = gsap.timeline()
-    const [count, setCount] = useState(0)
 
     useLayoutEffect(() => {
 
