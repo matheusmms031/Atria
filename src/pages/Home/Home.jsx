@@ -4,13 +4,13 @@ import video from "../../assets/fundo.mp4"
 import ButtonSample from "../../components/ButtonSample/ButtonSample.jsx"
 import { CardFirst } from "../../components/CardFirst/CardFirst"
 
-import Card1 from "../../assets/card1.png"
-import Card2 from "../../assets/card2.png"
+
 import globo from "../../assets/globo.png"
 import premier from "../../assets/premier.png"
 import telecine from "../../assets/telecine.png"
 
-
+import Grafico from "../../assets/grafico.png"
+import Parede from "../../assets/parede.png"
 
 
 import WhatsappIcon from "../../assets/Icons/Icons=Whatsapp.svg"
@@ -166,8 +166,8 @@ export default function Home(){
                         </div>
                     </div>
                     <div className={styles.worksCards}>
-                        <CardSecond image={Card1} title="Extrema conectividade" description="Nossos planos são essencialmente construidos para proporcionar um ambiente de alta conectividade e velocidade."/>
-                        <CardSecond image={Card2} title="Conexão Robusta" description="Todo o nossos sistema é robusto e sólido, testado e aprovado para evitar quedas na rede, assim garantindo confiabilidade."/>
+                        <CardSecond image={Grafico} title="Extrema conectividade" description="Nossos planos são essencialmente construidos para proporcionar um ambiente de alta conectividade e velocidade."/>
+                        <CardSecond image={Parede} title="Conexão Robusta" description="Todo o nossos sistema é robusto e sólido, testado e aprovado para evitar quedas na rede, assim garantindo confiabilidade."/>
                     </div>
                 </div>
             </section>
