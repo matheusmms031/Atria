@@ -47,7 +47,12 @@ export default function Nav() {
                                 Planos
                         </NavLink>
                     </span>
-                    <span className="bodyMedium">Contato</span>
+                        <span className="bodyMedium">
+                            <NavLink to="/contato#" preventScrollReset className={({ isActive }) =>
+                                isActive ? "selected" : "none"}>
+                                    Contato
+                            </NavLink>
+                        </span>
                 </div>
 
                 <div className={styles.button} onClick={handleClick}>   
