@@ -1,12 +1,8 @@
-import { useRef, useLayoutEffect} from 'react'
+import { useRef, useLayoutEffect } from 'react';
 import styles from "./Home.module.scss"
 import video from "../../assets/fundo.mp4"
 import { CardFirst } from "../../components/CardFirst/CardFirst"
 
-
-import globo from "../../assets/globo.png"
-import premier from "../../assets/premier.png"
-import telecine from "../../assets/telecine.png"
 
 import Grafico from "../../assets/grafico.png"
 import Parede from "../../assets/parede.png"
@@ -24,7 +20,14 @@ import AppIconW from "../../assets/Icons/Icons=App-w.svg"
 import HuaweiW from "../../assets/Icons/Icons=Huawei-w.svg"
 import RouterW from "../../assets/Icons/Icons=Roteador-w.svg"
 
-
+import DeezerImage from "../../assets/deezer.png"
+import MaxImage from "../../assets/max.png"
+import NopingImage from "../../assets/noping.png"
+import NutriImage from "../../assets/nutri.png"
+import PlaykidsImage from "../../assets/playkids.png"
+import SkyImage from "../../assets/sky.png"
+import ZenImage from "../../assets/zen.png"
+import DocwayImage from "../../assets/docway.png"
 
 import Tag from "../../components/Tag/Tag.jsx"
 import CardSecond from "../../components/CardSecond/CardSecond.jsx"
@@ -45,32 +48,45 @@ export default function Home(){
     const DescRef = useRef(null)
     const ButtonRef = useRef(null)
 
-    useLayoutEffect(() => {
+    const logosRef = useRef(null);
 
-        gsap.fromTo(TagRef.current, {opacity:0, x: 200}, {opacity:1, x: 0, duration: 1, ease: "power3.out",});
-        gsap.fromTo(TitleRef.current, {opacity:0, x: 200}, {opacity:1, x: 0, duration: 1, ease: "power3.out",delay: 0.20});
-        gsap.fromTo(DescRef.current, {opacity:0, x: 200}, {opacity:1, x: 0, duration: 1, ease: "power3.out" , delay: 0.40});
-        gsap.fromTo(ButtonRef.current, {opacity:0, x: 200}, {opacity:1, x: 0, duration: 1, ease: "power3.out" , delay: 0.60});
+        useLayoutEffect(() => {
+            const logosElement = logosRef.current;
 
-        gsap.utils.toArray(".fade-in").forEach((element) => {
-        gsap.fromTo(
-            element,
-            { opacity: 0, y: 100 }, // Estado inicial
-            {
-              opacity: 1,
-              y: 0,
-              duration: 1,
-              ease: "power3.out",
-              scrollTrigger: {
-                trigger:element, // Elemento que dispara o ScrollTrigger
-                start: "top 80%", // Quando a parte superior do gatilho atinge 80% da altura da viewport
-                end: "bottom 40%", // Fim da animação
-                scrub:true,
-                
-              },
-            }
-          );});
-    })
+            gsap.fromTo(TagRef.current, {opacity:0, x: 200}, {opacity:1, x: 0, duration: 1, ease: "power3.out",});
+            gsap.fromTo(TitleRef.current, {opacity:0, x: 200}, {opacity:1, x: 0, duration: 1, ease: "power3.out",delay: 0.20});
+            gsap.fromTo(DescRef.current, {opacity:0, x: 200}, {opacity:1, x: 0, duration: 1, ease: "power3.out" , delay: 0.40});
+            gsap.fromTo(ButtonRef.current, {opacity:0, x: 200}, {opacity:1, x: 0, duration: 1, ease: "power3.out" , delay: 0.60});
+
+            gsap.utils.toArray(".fade-in").forEach((element) => {
+            gsap.fromTo(
+                element,
+                { opacity: 0, y: 100 }, // Estado inicial
+                {
+                  opacity: 1,
+                  y: 0,
+                  duration: 1,
+                  ease: "power3.out",
+                  scrollTrigger: {
+                    trigger:element, // Elemento que dispara o ScrollTrigger
+                    start: "top 80%", // Quando a parte superior do gatilho atinge 80% da altura da viewport
+                    end: "bottom 40%", // Fim da animação
+                    scrub:true,
+
+                  },
+                }
+              );});
+        const logosWidth = logosElement.scrollWidth;
+        const containerWidth = logosElement.offsetWidth;
+        console.log({ logosWidth, containerWidth });
+
+        gsap.to(logosElement, {
+        x: `-2500px`,
+        duration: 40,
+        ease: "linear",
+        repeat: -1,
+    });
+}, []);
 
 
 
@@ -206,10 +222,39 @@ export default function Home(){
                 <div className={styles.logosContent}>
                     <span className={`${styles.logosDescription} bodySmall`} > Disponibilizamos diversos streamings 
                     para nossos assinantes.</span>
-                    <div className={styles.logosCollection}>
-                        <img src={globo} alt="Globo" className={styles.logoimage}/>
-                        <img src={premier} alt="Premier" className={styles.logoimage}/>
-                        <img src={telecine} alt="Telecine" className={styles.logoimage}/>
+                    <div className={styles.logosCollection} ref={logosRef}>
+                        <img src={DeezerImage} alt="Globo" className={styles.logoimage} />
+                        <img src={MaxImage} alt="Globo" className={styles.logoimage} />
+                        <img src={NopingImage} alt="Globo" className={styles.logoimage} />
+                        <img src={NutriImage} alt="Globo" className={styles.logoimage} />
+                        <img src={SkyImage} alt="Globo" className={styles.logoimage} />
+                        <img src={ZenImage} alt="Globo" className={styles.logoimage} />
+                        <img src={PlaykidsImage} alt="Globo" className={styles.logoimage} />
+                        <img src={DocwayImage} alt="Globo" className={styles.logoimage} />
+                        <img src={DeezerImage} alt="Globo" className={styles.logoimage} />
+                        <img src={MaxImage} alt="Globo" className={styles.logoimage} />
+                        <img src={NopingImage} alt="Globo" className={styles.logoimage} />
+                        <img src={NutriImage} alt="Globo" className={styles.logoimage} />
+                        <img src={SkyImage} alt="Globo" className={styles.logoimage} />
+                        <img src={ZenImage} alt="Globo" className={styles.logoimage} />
+                        <img src={PlaykidsImage} alt="Globo" className={styles.logoimage} />
+                        <img src={DocwayImage} alt="Globo" className={styles.logoimage} />
+                        <img src={DeezerImage} alt="Globo" className={styles.logoimage} />
+                        <img src={MaxImage} alt="Globo" className={styles.logoimage} />
+                        <img src={NopingImage} alt="Globo" className={styles.logoimage} />
+                        <img src={NutriImage} alt="Globo" className={styles.logoimage} />
+                        <img src={SkyImage} alt="Globo" className={styles.logoimage} />
+                        <img src={ZenImage} alt="Globo" className={styles.logoimage} />
+                        <img src={PlaykidsImage} alt="Globo" className={styles.logoimage} />
+                        <img src={DocwayImage} alt="Globo" className={styles.logoimage} />
+                        <img src={DeezerImage} alt="Globo" className={styles.logoimage} />
+                        <img src={MaxImage} alt="Globo" className={styles.logoimage} />
+                        <img src={NopingImage} alt="Globo" className={styles.logoimage} />
+                        <img src={NutriImage} alt="Globo" className={styles.logoimage} />
+                        <img src={SkyImage} alt="Globo" className={styles.logoimage} />
+                        <img src={ZenImage} alt="Globo" className={styles.logoimage} />
+                        <img src={PlaykidsImage} alt="Globo" className={styles.logoimage} />
+                        <img src={DocwayImage} alt="Globo" className={styles.logoimage} />
                     </div>
                 </div>
             </section>

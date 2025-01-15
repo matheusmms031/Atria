@@ -37,6 +37,10 @@
     gap: 5rem;
 }
 
+.logoimage{
+    height: 3rem;
+}
+
 .logos{
     display: flex;
     height: 13.0625rem;
@@ -372,14 +376,13 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        flex-wrap: wrap;
+        flex-direction: row;
         gap: 5rem;
     }
     .logos{
         display: flex;
         height: fit-content;
         padding: 2.1875rem 5.5rem;
-        flex-direction: column;
         justify-content: center;
         align-items: center;
         gap: 0.625rem;
