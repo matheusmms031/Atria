@@ -137,6 +137,7 @@
         justify-content: center;
         align-items: center;
         gap: 1.1875rem;
+        height: fit-content;
     }
     .Titles{
         width: auto;
@@ -147,15 +148,15 @@
         text-shadow: 0px 0px 5.8px rgba(255, 255, 255, 0.09);
 
         /* H2 */
-        font-family: "DM Sans";
-        font-size: 3.375rem;
+        font-family: "BDSans";
+        font-size: 3rem;
         font-style: normal;
         font-weight: 700;
         line-height: 3.4375rem; /* 101.852% */
         letter-spacing: -0.10125rem;
     }
     .Content{
-        padding: 0rem 1.875rem;
+        padding: 5rem 1.875rem;
         width: auto;
     }
     .Boxes{
