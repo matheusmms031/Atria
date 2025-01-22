@@ -13,7 +13,20 @@ import Relogio from "../../assets/relogio.png"
 import Lampada from "../../assets/lampada.png"
 import Alvo from "../../assets/alvo.png"
 
+import { useRef, useEffect} from "react"
+import gsap from "gsap"
+
 export default function Sobre(){
+    const title = useRef(null);
+    const img = useRef(null);
+    const desc = useRef(null);
+
+    useEffect(() => {
+        gsap.fromTo(img.current, {opacity:0, x: 200}, {opacity:1, x: 0, duration: 1, ease: "power3.out",});
+        gsap.fromTo(title.current, {opacity:0, x: 200}, {opacity:1, x: 0, duration: 1, ease: "power3.out",delay: 0.20});
+        gsap.fromTo(desc.current, {opacity:0, x: 200}, {opacity:1, x: 0, duration: 1, ease: "power3.out" , delay: 0.40});
+    })
+
     return(
         <div className="stack">
             <ScrollToTop />
@@ -22,10 +35,10 @@ export default function Sobre(){
 
             <section className={styles.hero}>
                 <div className={styles.heroContent}>
-                    <img src={logoup} className={styles.logoup}/>
+                    <img src={logoup} className={styles.logoup} ref={img}/>
                     <div className={styles.heroTexts}>
-                        <span className={`${styles.heroTitle} title1`}>Um pouco da Átria</span>
-                        <span className="bodyLarge">Bem-vindo ao futuro da conectividade.
+                        <span className={`${styles.heroTitle} title1`} ref={title}>Um pouco da Átria</span>
+                        <span className="bodyLarge" ref={desc}>Bem-vindo ao futuro da conectividade.
                             velocidade, exclusividade e tecnologia de
                             ponta - tudo pensado para você viver sem
                             limites.
