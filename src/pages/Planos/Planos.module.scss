@@ -49,6 +49,7 @@
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    height: 12rem;
 }
 
 .plans{
@@ -156,6 +157,12 @@
     text-align: left;
 }
 
+.condicao{
+    color: #d3d600;
+    font-size: 0.7rem;
+    font-family: "DM Sans";
+}
+
 
 @media (max-width:720px) {
     .heroTitles{
@@ -165,6 +172,7 @@
         font-size: 3rem;
         line-height: 3.625rem;
         text-align: left;
+        height: fit-content;
     }
     .heroContent{
         width: fit-content;

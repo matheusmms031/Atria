@@ -1,4 +1,4 @@
-import { useRef, useLayoutEffect } from 'react';
+import { useRef, useLayoutEffect, useContext } from 'react';
 import styles from "./Home.module.scss"
 import video from "../../assets/fundo.mp4"
 import { CardFirst } from "../../components/CardFirst/CardFirst"
@@ -9,16 +9,16 @@ import Parede from "../../assets/parede.png"
 
 
 import WhatsappIcon from "../../assets/Icons/Icons=Whatsapp.svg"
-import WhatsappIconW from "../../assets/Icons/Icons=Whatsapp-w.svg"
-import HomeW from "../../assets/Icons/Icons=Home-w.svg"
-import HelpW from "../../assets/Icons/Icons=Help-w.svg"
-import TvW from "../../assets/Icons/Icons=Tv-w.svg"
+import WhatsappIconW from "../../assets/Icons/Icons=Whatsapp.svg"
+import HomeW from "../../assets/Icons/Icons=Home.svg"
+import HelpW from "../../assets/Icons/Icons=Help.svg"
+import TvW from "../../assets/Icons/Icons=Tv.svg"
 import WifiIcon from "../../assets/Icons/Icons=Wifi.svg"
-import WifiIconW from "../../assets/Icons/Icons=Wifi-w.svg"
+import WifiIconW from "../../assets/Icons/Icons=Wifi.svg"
 import AppIcon from "../../assets/Icons/Icons=App.svg"
-import AppIconW from "../../assets/Icons/Icons=App-w.svg"
-import HuaweiW from "../../assets/Icons/Icons=Huawei-w.svg"
-import RouterW from "../../assets/Icons/Icons=Roteador-w.svg"
+import AppIconW from "../../assets/Icons/Icons=App.svg"
+import HuaweiW from "../../assets/Icons/Icons=Huawei.svg"
+import RouterW from "../../assets/Icons/Icons=Roteador.svg"
 
 import DeezerImage from "../../assets/deezer.png"
 import MaxImage from "../../assets/max.png"
@@ -38,7 +38,6 @@ import ScrollToTop from "../../components/ScrollToTop/ScrollToTop.jsx"
 
 import gsap from 'gsap'
 import ScrollTrigger from 'gsap/ScrollTrigger'
-
 gsap.registerPlugin(ScrollTrigger);
 
 export default function Home(){
@@ -102,24 +101,24 @@ export default function Home(){
                 <video autoPlay muted loop className={styles.video} src={video}/>
             </section>
 
-            <section className={styles.features}>
+            <section className={styles.features} id='diferenciais'>
                 <div className={`${styles.featuresContent}`}>
                     <span className={`${styles.featuresTitle} title2`}>Veja nossos diferenciais</span>
                     <div className={styles.featuresBoxesLines}>
                         <div className={styles.featuresBoxesCollumns}>
                             <FeatureBox image={WhatsappIconW} title="Rápida velocidade" description="Velocidade rápida de navegação garantida pela alta banda larga."/>
                             <FeatureBox image={AppIconW} title="Aplicativo próprio" description="Disponibilidade de acessar seu plano atráves do aplicativo."/>
-                            <FeatureBox image={WifiIconW} title="Planos com Wifi-7" description="Wifi-7 é a versão mais recente e consolidade para performance."/>
+                            <FeatureBox image={WifiIconW} title="Planos com Wifi-7" description="Wifi-7 é a versão mais recente e consolidada para um alto desempenho."/>
                         </div>
                         <div className={styles.featuresBoxesCollumns}>
                             <FeatureBox image={HelpW} title="Suporte 24 horas" description="Nossa equipe está pronta para atender você a qualquer dia."/>
                             <FeatureBox image={HomeW} title="Atendimento à domícilio" description="Atendimento diretamente no local feito por técnico especializado."/>
-                            <FeatureBox image={TvW} title="Planos com Streaming" description="Possibilidade de encaixar combos de streamings na assinatura."/>
+                            <FeatureBox image={TvW} title="Tv, Streaming e Apps" description="Crie seus combos de acordo com as suas necessidades."/>
                         </div>
                         <div className={styles.featuresBoxesCollumns}>
-                            <FeatureBox image={HelpW} title="Atendimento rápido" description="Nossa equipe responde suas questões em até 3 horas."/>
-                            <FeatureBox image={HuaweiW} title="Roteadores Huawei" description="Atendimento diretamente no local feito por técnico especializado."/>
-                            <FeatureBox image={RouterW} title="Planos multi pontos" description="Dependendo do plano escolhido o cliente tem mais pontos na residência"/>
+                            <FeatureBox image={HelpW} title="Rapidez no atendimento" description="Estamos prontos para te atender no tempo que você precisar."/>
+                            <FeatureBox image={HuaweiW} title="Equipamentos de ponta" description="Trabalhamos com equipamentos de última geração com a melhor tecnologia do mercado."/>
+                            <FeatureBox image={RouterW} title="Integração total" description="Tenha internet aonde você precisa!"/>
                         </div>
                     </div>
                 </div>
@@ -131,13 +130,14 @@ export default function Home(){
                     <div className={styles.inovationTexts}>
                         <span className={`${styles.inovationTitle} title2`}> Viemos para inovar </span>
                         <span className={`${styles.inovationDescription} bodyLarge`}>
-                        Estamos nos bairros Belvedere e Vila da Serra a melhor das experiências de conectividade de toda a região.
+                        Estamos nos bairros Belvedere e Vila da Serra.<br/>
+                        Chegamos com a melhor experiência de conectividade da região.
                         </span>
                     </div>
                     <div className={styles.inovationCards}>
-                        <CardFirst image={WhatsappIcon} title="Suporte por Whatsapp" description="Estamos no Whatsapp para solucionar problemas a distância, estando 24 horas dispostos."/>
-                        <CardFirst image={WifiIcon} title="Roteadores com Wifi 6 e 7" description="Utilizamos como padrão roteadores da Huawei, contendo suporte a versão mais recente de Wifi."/>
-                        <CardFirst image={AppIcon} title="Aplicativo de gerenciamento" description="Oferecemos aos nossos clientes um aplicativo mobile para gerenciar seus planos e pontos."/>
+                        <CardFirst image={WhatsappIcon} title="Suporte por Whatsapp" description="Estamos no Whatsapp para solucionar problemas a distância, estando 24 horas disponíveis."/>
+                        <CardFirst image={WifiIcon} title="Roteadores com Wifi 6 e 7" description="Utilizamos como padrão roteadores da mais alta tecnologia, sempre priorizando a versão mais recente do Wi-Fi."/>
+                        <CardFirst image={AppIcon} title="Aplicativo de gerenciamento" description="Oferecemos aos nossos clientes um aplicativo mobile para gerenciar seus planos."/>
                     </div>  
                 </div>
             </section>
@@ -171,7 +171,7 @@ export default function Home(){
                 <div className={styles.plansBox}>
                     <div className={styles.plansLines}>
                         <PlanCard 
-                            title="Básico"
+                            title="Turbo"
                             price="600 Mbp/s"
                             features={[
                                 {"title":"Wifi-6"},
@@ -179,7 +179,7 @@ export default function Home(){
                             ]}  
                         />
                         <PlanCard
-                            title="Padrão"
+                            title="Ultra"
                             price="800 Mbp/s"
                             features={[
                                 {"title":"1 Ponto adicional"},
@@ -188,7 +188,7 @@ export default function Home(){
                             ]}  
                         />
                         <PlanCard
-                            title="Gamer"
+                            title="Premium"
                             price="1 Gbp/s"
                             features={[
                                 {"title":"1 Ponto adicional"},
@@ -202,7 +202,7 @@ export default function Home(){
                             ]}
                         />
                         <PlanCard
-                            title="Exclusivo"
+                            title="Master"
                             price="2 Gbp/s"
                             features={[
                                 {"title":"2 Pontos adicionais"},

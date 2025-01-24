@@ -76,7 +76,7 @@
     align-items: center;
     gap: 2rem;
     align-self: stretch;
-    background: linear-gradient(180deg, #000 -3.8%, rgba(0, 0, 0, 0.80) 21.55%, rgba(0, 0, 0, 0.60) 40.56%, rgba(0, 0, 0, 0.60) 76.46%, rgba(82, 80, 11, 0.55) 100.4%);
+    background: linear-gradient(180deg, #000 -3.8%, rgba(0, 0, 0, 0.80) 21.55%, rgba(0, 0, 0, 0.60) 40.56%, rgba(0, 0, 0, 0.60) 70.41%, rgba(0, 0, 0, 0.60) 76.24%, rgba(128, 124, 0, 0.84) 92.15%, #E8E120 100%);
 }
 
 .titleFirst{
@@ -123,7 +123,7 @@
     align-items: center;
     gap: 0.625rem;
     align-self: stretch;
-    background-color: #000;
+    background: black;
 }
 
 .inovationContent{
@@ -141,7 +141,7 @@
 }
 
 .inovationTitle{
-    color: #FFF;
+    color: #E8E120;
     text-align: center;
     font-size: 3.375rem;
     line-height: 3rem;
@@ -226,7 +226,7 @@
     justify-content: center;
     align-items: center;
     align-self: stretch;
-    background: #000000;
+    background: linear-gradient(180deg, #E8E120 93.2%, #E8E120 93.25%, #E7E020 93.4%, #E6DF20 93.63%, #E4DD1F 93.94%, #DFD91F 94.33%, #D9D31E 94.77%, #D0CA1D 95.26%, #C5BF1B 95.8%, #B6B019 96.37%, #A39E17 96.97%, #8D8813 97.58%, #716E10 98.2%, #514F0B 98.81%, #2B2A06 99.42%, #000 100%);
 }
 
 .featuresContent{
@@ -240,7 +240,7 @@
 
 .featuresTitle{
     width: 21.625rem;
-    color: #FFF;
+    color: #000000;
 }
 
 .featuresBoxesLines{

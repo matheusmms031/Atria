@@ -28,11 +28,11 @@ export default function Contato(){
                             <textarea type="text" placeholder="Mensagem" onChange={event => setMessage(event.target.value)}/>
                         </div>
                         <ButtonSample style={{alignSelf:"stretch"}} onClick={() => {
-                            window.open(`https://api.whatsapp.com/send?phone=5523331401&text=${encodeURIComponent(`Nome: ${name} \n Mensagem: ${message} Enviado automaticamente pelo site da Átria Digital.`)}`, "_blank")
+                            window.open(`https://api.whatsapp.com/send?phone=3123331401&text=${encodeURIComponent(`Nome: ${name} \n Mensagem: ${message} Enviado automaticamente pelo site da Átria Digital.`)}`, "_blank")
                         }}>Enviar</ButtonSample>
                     </div>
                     <div className={styles.social}>
-                        <img src={WhatssapIcon} alt="Whatsapp" className={styles.socialIcon} onClick={() => {window.open("https://api.whatsapp.com/send?phone=5523331401","_blank")}}/>
+                        <img src={WhatssapIcon} alt="Whatsapp" className={styles.socialIcon} onClick={() => {window.open("https://api.whatsapp.com/send?phone=3123331401","_blank")}}/>
                         <img src={InstagramIcon} alt="Whatsapp" className={styles.socialIcon}/>
                     </div>
                 </div>

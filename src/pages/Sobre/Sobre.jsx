@@ -48,13 +48,13 @@ export default function Sobre(){
             </section>
 
 
-            <section className={styles.family}>
+            <section className={styles.family} id="familia">
                 <div className={styles.familyContent}>
                     <div className={styles.familyTexts}>
                         <div className={styles.familyFirstBox}>
                             <span className={`${styles.familyTitle} title1`}>Somos uma fámilia</span>
                             <span className={`${styles.familyFirstBoxDescription} bodyMedium`}>
-                            Na Átria Digital, acreditamos que oferecer planos de internet de luxo vai além de tecnologia avançada e velocidades incríveis. 
+                            Na Átria Digital, acreditamos que oferecer planos de internet de alto padrão vai além de tecnologia avançada e velocidades incríveis. 
                             Para nós, cada cliente, colaborador e parceiro faz parte de algo maior: uma família.
                             Valorizamos relações baseadas em confiança, cuidado e excelência. 
                             
@@ -77,7 +77,7 @@ export default function Sobre(){
                                     <span className="title5">Equipe responsável</span>
                                 </div>
                                 <span className={`${styles.familyComponentDesc} bodySmall`}>
-                                    Nossos colaboradores são comprometidos, motivados e entregam resultados incríveis.
+                                    Nossos colaboradores são comprometidos, motivados e aptos para entregar os melhores resultados.
                                 </span>
                             </div>
                         </div>
@@ -86,7 +86,7 @@ export default function Sobre(){
                 </div>
             </section>
 
-            <section className={styles.ourValues}>
+            <section className={styles.ourValues} id='valores'>
                 <div className={styles.ourContents}>
                     <div className={styles.ourTexts}>
                         <span className={`${styles.ourTitle} title1`}>Nossos valores</span>
@@ -106,7 +106,7 @@ export default function Sobre(){
                                     </div>
                                     <span className="title4">Excelência</span>
                                 </div>
-                                <span className={`${styles.ourElementDescription} bodyMedium`}>ntregar sempre o melhor, superando expectativas em cada detalhe.</span>
+                                <span className={`${styles.ourElementDescription} bodyMedium`}>Entregar sempre o melhor, superando expectativas em cada detalhe.</span>
                             </div>
                             <div className={styles.ourElement}>
                                 <div className={styles.ourElementTitle}>

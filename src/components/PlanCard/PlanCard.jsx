@@ -39,7 +39,7 @@ export default function PlanCard({title="Pro",price="$79/mo",velocity="500 Mb/s"
                     
                     }
                 </div>
-                <div className={styles.button} onClick={() => {window.open(`https://api.whatsapp.com/send?phone=5523331401&text=Estou interessado pelo plano ${title}`,"_blank")}}>
+                <div className={styles.button} onClick={() => {window.open(`https://api.whatsapp.com/send?phone=3123331401&text=Estou interessado pelo plano ${title}`,"_blank")}}>
                     <span className="bodyMedium">Assine já</span>
                 </div>
             </div>

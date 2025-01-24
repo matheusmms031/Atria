@@ -6,7 +6,23 @@ import Link from "../../assets/Icons/Property 1=LinkedIn.svg"
 
 export default function Footer(){
     var table = [
-        
+        {"title":"Sobre nós", 
+            "content":[
+                {"link":"/sobre#valores", "span":"Nossos valores"},
+                {"link":"/#diferenciais", "span":"Os diferenciais"},
+                {"link":"/sobre#familia", "span":"Somos uma família"}]},
+
+        {"title": "Planos", 
+            "content":[
+                {"link":"/planos#turbo", "span":"Turbo"}, 
+                {"link":"/planos#ultra", "span":"Ultra"},
+                {"link":"/planos#premium", "span":"Premium"},
+                {"link":"/planos#master", "span":"Master"}]},
+        {"title": "Contato", 
+            "content":[
+                {"link":"/contato", "span":"Entre em contato"},
+                {"link":"/trabalhe-conosco", "span":"Trabalhe conosco"},
+                {"link":"https://www.instagram.com/atriadigitalbr/", "span":"Instagram"},]}
     ]
     
     return(
@@ -35,7 +51,7 @@ export default function Footer(){
                                 <span className={`${styles.title}`}>{element.title}</span>
                                 {
                                     element.content.map((content, index) => (
-                                        <a href={content.link}>{content.span}</a>
+                                        <a href={content.link} key={index}>{content.span}</a>
                                     ))
                                 }
                             </div>

@@ -2,7 +2,7 @@ import styles from "./Nav.module.scss"
 import image from "../../assets/logo_linear.png"
 import { NavLink } from "react-router"
 import Menu from "../../assets/Icons/Icons=Menu.svg"
-import { useState, useRef, useEffect } from "react";
+import { useState, useRef, } from "react";
 import X from "../../assets/Icons/x.png"
 import gsap from "gsap";
 
@@ -30,25 +30,25 @@ export default function Nav() {
                 <img src={image} className={styles.img} />
                 <div className={styles.items}>
                     <span className="bodyMedium">
-                        <NavLink to="/#" preventScrollReset className={({ isActive }) =>
+                        <NavLink to="/" preventScrollReset className={({ isActive }) =>
                             isActive ? "selected" : "none"}>
                                 Home
                         </NavLink>
                     </span>
                     <span className="bodyMedium">
-                        <NavLink to="/sobre#" preventScrollReset className={({ isActive }) =>
+                        <NavLink to="/sobre" preventScrollReset className={({ isActive }) =>
                             isActive ? "selected" : "none"}>
                             Sobre
                         </NavLink>
                     </span>
                     <span className="bodyMedium">
-                        <NavLink to="/planos#" preventScrollReset className={({ isActive }) =>
+                        <NavLink to="/planos" className={({ isActive }) =>
                             isActive ? "selected" : "none"}>
                                 Planos
                         </NavLink>
                     </span>
                         <span className="bodyMedium">
-                            <NavLink to="/contato#" preventScrollReset className={({ isActive }) =>
+                            <NavLink to="/contato" preventScrollReset className={({ isActive }) =>
                                 isActive ? "selected" : "none"}>
                                     Contato
                             </NavLink>
@@ -64,7 +64,7 @@ export default function Nav() {
 
                 <div className={styles.menuNav} ref={listNav}>
                     <span className="bodyLarge">
-                        <NavLink to="/#" preventScrollReset className={({ isActive }) =>
+                        <NavLink to="/" preventScrollReset className={({ isActive }) =>
                             isActive ? "selected" : "none"}>
                                 Home
                         </NavLink>
