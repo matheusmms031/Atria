@@ -38,6 +38,8 @@ import ScrollToTop from "../../components/ScrollToTop/ScrollToTop.jsx"
 
 import gsap from 'gsap'
 import ScrollTrigger from 'gsap/ScrollTrigger'
+
+
 gsap.registerPlugin(ScrollTrigger);
 
 export default function Home(){
@@ -68,10 +70,9 @@ export default function Home(){
                   ease: "power3.out",
                   scrollTrigger: {
                     trigger:element, // Elemento que dispara o ScrollTrigger
-                    start: "top 80%", // Quando a parte superior do gatilho atinge 80% da altura da viewport
-                    end: "bottom 40%", // Fim da animação
+                    start: "top 90%", // Quando a parte superior do gatilho atinge 80% da altura da viewport
+                    end: "50% 60%", // Fim da animação
                     scrub:true,
-
                   },
                 }
               );});
