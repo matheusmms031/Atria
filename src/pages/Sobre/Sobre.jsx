@@ -8,6 +8,7 @@ import stylesHome from "../Home/Home.module.scss"
 import Tag from "../../components/Tag/Tag.jsx"
 import Employee from "../../components/Employee/Employee.jsx"
 import ScrollToTop from "../../components/ScrollToTop/ScrollToTop.jsx"
+import video from "../../assets/fundo_sobre.mp4"
 
 import Relogio from "../../assets/relogio.png"
 import Lampada from "../../assets/lampada.png"
@@ -20,6 +21,7 @@ export default function Sobre(){
     const title = useRef(null);
     const img = useRef(null);
     const desc = useRef(null);
+    const videoref = useRef(null);
 
     useEffect(() => {
         gsap.fromTo(img.current, {opacity:0, x: 200}, {opacity:1, x: 0, duration: 1, ease: "power3.out",});
@@ -46,6 +48,9 @@ export default function Sobre(){
                     </div>
                 </div>
             </section>
+            <div className={styles.videoBox}>
+                <video autoPlay muted loop className={styles.video} src={video} ref={videoref}/>
+            </div>
 
 
             <section className={styles.family} id="familia">
