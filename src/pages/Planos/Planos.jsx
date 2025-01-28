@@ -6,6 +6,7 @@ import Footer from "../../components/Footer/Footer"
 
 import { useRef, useEffect } from "react"
 import gsap from "gsap"
+import video from "../../assets/fundo_planos.mp4"
 
 export default function Planos(){
 
@@ -32,6 +33,10 @@ export default function Planos(){
                     </div>
                 </div>
             </section>
+
+            <div className={styles.videoBox}>
+                <video autoPlay muted loop className={styles.video} src={video} ref={videoref}/>
+            </div>
 
 
             <section className={styles.plans}>
