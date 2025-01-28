@@ -4,7 +4,7 @@ import LogoUp from "../../assets/logoup.png"
 import ButtonSample from "../../components/ButtonSample/ButtonSample"
 import Footer from "../../components/Footer/Footer"
 
-import { useRef, useEffect } from "react"
+import { useRef, useEffect, useLayoutEffect } from "react"
 import gsap from "gsap"
 import video from "../../assets/fundo_planos.mp4"
 
@@ -12,11 +12,31 @@ export default function Planos(){
 
     const title = useRef(null);
     const img = useRef(null);
+    const videoref = useRef(null);
 
     useEffect(() => {
         gsap.fromTo(img.current, {opacity:0, x: 200}, {opacity:1, x: 0, duration: 1, ease: "power3.out",});
         gsap.fromTo(title.current, {opacity:0, x: 200}, {opacity:1, x: 0, duration: 1, ease: "power3.out",delay: 0.20});
     })
+
+    useLayoutEffect(() => {
+        gsap.utils.toArray(".fade-in").forEach((element) => {
+            gsap.fromTo(
+                element,
+                { opacity: 0, y: 100 }, // Estado inicial
+                {
+                  opacity: 1,
+                  y: 0,
+                  duration: 1,
+                  ease: "power3.out",
+                  scrollTrigger: {
+                    trigger:element, // Elemento que dispara o ScrollTrigger
+                    start: "top 90%", // Quando a parte superior do gatilho atinge 80% da altura da viewport
+                    end: "50% 60%", // Fim da animação
+                    scrub:true,
+                  },
+                }
+              );});});
 
     return(
         <div className="stack">
@@ -40,7 +60,7 @@ export default function Planos(){
 
 
             <section className={styles.plans}>
-                <div className={styles.plansContent} id="turbo">
+                <div className={`${styles.plansContent} fade-in`} id="turbo">
                     <div className={styles.plansFirstBox}>
                         <div className={styles.plansTitleBox}>
                             <span className={styles.plansPlan}>Plano</span>
@@ -90,7 +110,7 @@ export default function Planos(){
                 </div>
             </section>
             <section className={styles.plans}>
-                <div className={styles.plansContent} id="ultra">
+                <div className={`${styles.plansContent} fade-in`} id="ultra">
                     <div className={styles.plansFirstBox}>
                         <div className={styles.plansTitleBox}>
                             <span className={styles.plansPlan}>Plano</span>
@@ -150,7 +170,7 @@ export default function Planos(){
                 </div>
             </section>
             <section className={styles.plans}>
-                <div className={styles.plansContent} id="premium">
+                <div className={`${styles.plansContent} fade-in`} id="premium">
                     <div className={styles.plansFirstBox}>
                         <div className={styles.plansTitleBox}>
                             <span className={styles.plansPlan}>Plano</span>
@@ -228,7 +248,7 @@ export default function Planos(){
                 </div>
             </section>
             <section className={styles.plans}>
-                <div className={styles.plansContent} id="master">
+                <div className={`${styles.plansContent} fade-in`} id="master">
                     <div className={styles.plansFirstBox}>
                         <div className={styles.plansTitleBox}>
                             <span className={styles.plansPlan}>Plano</span>
