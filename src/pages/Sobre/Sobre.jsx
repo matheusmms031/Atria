@@ -14,7 +14,7 @@ import Relogio from "../../assets/relogio.png"
 import Lampada from "../../assets/lampada.png"
 import Alvo from "../../assets/alvo.png"
 
-import { useRef, useEffect} from "react"
+import { useRef, useEffect, useLayoutEffect} from "react"
 import gsap from "gsap"
 
 export default function Sobre(){
@@ -27,7 +27,27 @@ export default function Sobre(){
         gsap.fromTo(img.current, {opacity:0, x: 200}, {opacity:1, x: 0, duration: 1, ease: "power3.out",});
         gsap.fromTo(title.current, {opacity:0, x: 200}, {opacity:1, x: 0, duration: 1, ease: "power3.out",delay: 0.20});
         gsap.fromTo(desc.current, {opacity:0, x: 200}, {opacity:1, x: 0, duration: 1, ease: "power3.out" , delay: 0.40});
+        gsap.fromTo(videoref.current, {opacity:0}, {opacity:1, duration: 1, ease: "power3.out" , delay: 1});
     })
+
+    useLayoutEffect(() => {
+        gsap.utils.toArray(".fade-in").forEach((element) => {
+            gsap.fromTo(
+                element,
+                { opacity: 0, y: 100 }, // Estado inicial
+                {
+                  opacity: 1,
+                  y: 0,
+                  duration: 1,
+                  ease: "power3.out",
+                  scrollTrigger: {
+                    trigger:element, // Elemento que dispara o ScrollTrigger
+                    start: "top 90%", // Quando a parte superior do gatilho atinge 80% da altura da viewport
+                    end: "50% 60%", // Fim da animação
+                    scrub:true,
+                  },
+                }
+              );});});
 
     return(
         <div className="stack">
@@ -54,7 +74,7 @@ export default function Sobre(){
 
 
             <section className={styles.family} id="familia">
-                <div className={styles.familyContent}>
+                <div className={`${styles.familyContent} fade-in`}>
                     <div className={styles.familyTexts}>
                         <div className={styles.familyFirstBox}>
                             <span className={`${styles.familyTitle} title1`}>Somos uma fámilia</span>
@@ -92,7 +112,7 @@ export default function Sobre(){
             </section>
 
             <section className={styles.ourValues} id='valores'>
-                <div className={styles.ourContents}>
+                <div className={`${styles.ourContents} fade-in`}>
                     <div className={styles.ourTexts}>
                         <span className={`${styles.ourTitle} title1`}>Nossos valores</span>
                         <span className={`${styles.ourDescription} bodyLarge`}>
@@ -149,7 +169,7 @@ export default function Sobre(){
 
 
             <section className={styles.porque}>
-                <div className={styles.porqueContent}>
+                <div className={`${styles.porqueContent} fade-in`}>
                     <div className={styles.porqueTitles}>
                         <span className={`${styles.porqueTitle} title2`}>Por que escolher a Átria?</span>
                         <span className={`${styles.porqueDescription} bodyLarge`}>
