@@ -6,10 +6,15 @@
     gap: 0.25rem;
     border-radius: 0.625rem;
     background: #FFF;
+    transition: 0.5s ease-in-out;
 
     cursor: pointer;
 
-    span{
+}
 
+.buttonsample:hover{
+    background-color: #E8E120;
+    span{
+        color: black;
     }
 }
