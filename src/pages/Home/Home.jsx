@@ -103,7 +103,7 @@ export default function Home(){
             </section>
 
             <section className={styles.features} id='diferenciais'>
-                <div className={`${styles.featuresContent}`}>
+                <div className={`${styles.featuresContent} fade-in`}>
                     <span className={`${styles.featuresTitle} title2`}>Veja nossos diferenciais</span>
                     <div className={styles.featuresBoxesLines}>
                         <div className={styles.featuresBoxesCollumns}>
@@ -127,7 +127,7 @@ export default function Home(){
 
 
             <section className={styles.inovation}>
-                <div className={`${styles.inovationContent}`}>
+                <div className={`${styles.inovationContent} fade-in`}>
                     <div className={styles.inovationTexts}>
                         <span className={`${styles.inovationTitle} title2`}> Viemos para inovar </span>
                         <span className={`${styles.inovationDescription} bodyLarge`}>
@@ -146,14 +146,14 @@ export default function Home(){
 
             <section className={styles.works}>
                 <div className={styles.worksContent}>
-                    <div className={`${styles.worksTexts}`}>
+                    <div className={`${styles.worksTexts} fade-in`}>
                         <Tag>Tudo que você precisa</Tag>
                         <div className={styles.worksTitles}>
                             <span className={`${styles.worksTitle} title2`}>Faça suas atividades <br/> com tranquilidade</span>
                             <span className={`${styles.worksDescription} bodyLarge`}>Trabalhe, estude e jogue com conforto sem se preocupar com problemas de conexão e estabilidade de rede, seus problemas acabaram com a Átria.</span>
                         </div>
                     </div>
-                    <div className={styles.worksCards}>
+                    <div className={`${styles.worksCards} fade-in`}>
                         <CardSecond image={Grafico} title="Extrema conectividade" description="Nossos planos são essencialmente construidos para proporcionar um ambiente de alta conectividade e velocidade."/>
                         <CardSecond image={Parede} title="Conexão Robusta" description="Todo o nossos sistema é robusto e sólido, testado e aprovado para evitar quedas na rede, assim garantindo confiabilidade."/>
                     </div>
