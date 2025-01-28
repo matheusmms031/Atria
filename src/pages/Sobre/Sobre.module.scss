@@ -1,12 +1,15 @@
 .hero{
+    z-index: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 0.625rem;
     align-self: stretch;
-    background-color: #000;
+    position: relative;
     height: 100vh;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.30) 0%, rgba(0, 0, 0, 0.30) 100%), linear-gradient(180deg, #000 0%, rgba(0, 0, 0, 0.80) 37%, rgba(0, 0, 0, 0.60) 50.5%, rgba(0, 0, 0, 0.60) 71.7%, rgba(0, 0, 0, 0.60) 75.84%, #000 100%);
+
 }
 
 .logoup{
@@ -16,10 +19,12 @@
 }
 
 .heroContent{
+    position: relative;
     display: flex;
     align-items: center;
     gap: 5rem;
     flex: 1 0 0;
+    
 }
 
 .heroTexts{
@@ -46,6 +51,21 @@
     gap: 1.5625rem;
     align-self: stretch;
     background: #000;
+}
+
+.videoBox{
+    position: absolute;
+    background-color: #000;
+    width: 100vw;
+    height: 100%;
+    z-index: 0;
+}
+
+.video{
+    width: 100vw;
+    z-index: 0;
+    height: 100%;
+    object-fit: cover;
 }
 
 .ourContents{
@@ -329,6 +349,7 @@
     .heroTitle{
         width: 30rem;
     }
+
 }
 
 
