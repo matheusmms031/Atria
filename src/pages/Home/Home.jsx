@@ -28,6 +28,7 @@ import PlaykidsImage from "../../assets/playkids.png"
 import SkyImage from "../../assets/sky.png"
 import ZenImage from "../../assets/zen.png"
 import DocwayImage from "../../assets/docway.png"
+import MetaPixel from '../../components/MetaPixel/MetaPixel.jsx';
 
 import Tag from "../../components/Tag/Tag.jsx"
 import CardSecond from "../../components/CardSecond/CardSecond.jsx"
@@ -35,6 +36,8 @@ import FeatureBox from "../../components/FeatureBox/FeatureBox"
 import Footer from "../../components/Footer/Footer.jsx"
 import PlanCard from "../../components/PlanCard/PlanCard.jsx"
 import ScrollToTop from "../../components/ScrollToTop/ScrollToTop.jsx"
+
+import { Helmet } from 'react-helmet-async';
 
 import gsap from 'gsap'
 import ScrollTrigger from 'gsap/ScrollTrigger'
@@ -91,6 +94,11 @@ export default function Home(){
 
 
     return(
+        <>
+        <Helmet>
+            <title>Home - Átria Digital</title>
+        </Helmet>
+        <MetaPixel />
         <div className="stack">
             <ScrollToTop />
             <section className={styles.hero}>
@@ -263,5 +271,6 @@ export default function Home(){
 
             <Footer/>
         </div>
+        </>
     )
 }

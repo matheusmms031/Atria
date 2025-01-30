@@ -56,13 +56,13 @@
 .videoBox{
     position: absolute;
     background-color: #000;
-    width: 100vw;
+    width: 100%;
     height: 100%;
     z-index: 0;
 }
 
 .video{
-    width: 100vw;
+    width: 100%;
     z-index: 0;
     height: 100%;
     object-fit: cover;
@@ -476,6 +476,7 @@
         line-height: 3.125rem; /* 78.125% */
         letter-spacing: 0rem;
         height: 10rem;
+
     }
 
     .heroTexts{

@@ -9,6 +9,7 @@ import Sobre from "./pages/Sobre/Sobre.jsx";
 import Planos from "./pages/Planos/Planos.jsx";
 import "./constants/typografy.scss"
 import Contato from "./pages/Contato/Contato.jsx";
+import { HelmetProvider } from "react-helmet-async";
 import './App.css'
 import Nav from './components/Nav/Nav'
 
@@ -16,6 +17,7 @@ function App() {
 
   return (
     <>
+    <HelmetProvider>
       <BrowserRouter>
             <Nav/>
                     <Routes>
@@ -25,6 +27,7 @@ function App() {
                             <Route path="/contato" element={<Contato />} exact/>
                     </Routes>
         </BrowserRouter>
+    </HelmetProvider>
     </>
   )
 }

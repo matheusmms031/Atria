@@ -16,6 +16,8 @@ import Alvo from "../../assets/alvo.png"
 
 import { useRef, useEffect, useLayoutEffect} from "react"
 import gsap from "gsap"
+import MetaPixel from "../../components/MetaPixel/MetaPixel.jsx"
+import { Helmet } from "react-helmet-async"
 
 export default function Sobre(){
     const title = useRef(null);
@@ -50,6 +52,11 @@ export default function Sobre(){
               );});});
 
     return(
+        <>
+        <Helmet>
+            <title>Sobre - Átria Digital</title>
+        </Helmet>
+        <MetaPixel/>
         <div className="stack">
             <ScrollToTop />
 
@@ -59,7 +66,7 @@ export default function Sobre(){
                 <div className={styles.heroContent}>
                     <img src={logoup} className={styles.logoup} ref={img}/>
                     <div className={styles.heroTexts}>
-                        <span className={`${styles.heroTitle} title1`} ref={title}>Um pouco da Átria</span>
+                        <span className={`${styles.heroTitle} title1`} ref={title}>Um<br/>pouco<br/> da Átria</span>
                         <span className="bodyLarge" ref={desc}>Bem-vindo ao futuro da conectividade.
                             velocidade, exclusividade e tecnologia de
                             ponta - tudo pensado para você viver sem
@@ -185,5 +192,6 @@ export default function Sobre(){
 
             <Footer/>
         </div>
+        </>
     )
 }

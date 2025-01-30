@@ -4,6 +4,8 @@ import ButtonSample from "../../components/ButtonSample/ButtonSample.jsx"
 
 import WhatssapIcon from "../../assets/Icons/Icons=Whatsapp-w.svg"
 import InstagramIcon from "../../assets/Icons/Property 1=Instagram.svg"
+import MetaPixel from "../../components/MetaPixel/MetaPixel.jsx"
+import { Helmet } from "react-helmet-async"
 
 export default function Contato(){
     const [name, setName] = useState("")
@@ -11,6 +13,11 @@ export default function Contato(){
 
 
     return(
+        <>
+        <Helmet>
+            <title>Contato - Átria Digital</title>
+        </Helmet>
+        <MetaPixel/>
         <div className="stack">
             <div className={styles.Contact}>
                 <div className={styles.Content}>
@@ -38,5 +45,6 @@ export default function Contato(){
                 </div>
             </div>
         </div>
+        </>
     )
 }
