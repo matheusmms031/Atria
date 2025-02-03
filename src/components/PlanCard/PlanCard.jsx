@@ -1,5 +1,6 @@
 import styles from "./PlanCard.module.scss"
 import line from "../../assets/line.svg"
+import ReactGA from "react-ga4"
 
 var list = [
     {"title":"Keyword optimization"},
@@ -10,6 +11,17 @@ var list = [
 ]
 
 export default function PlanCard({title="Pro",price="$79/mo",velocity="500 Mb/s",features=list,link="", ...props}){
+
+    const handleClick = () => {
+        ReactGA.event("click", {
+            event_category: "User",
+            event_action: "click",
+            event_label: `${title}`
+        })
+    
+        window.open(`https://api.whatsapp.com/send?phone=3123331401&text=Estou interessado pelo plano ${title}`,"_blank")};
+
+
     return(
         <div className={styles.planCard} {...props}>
             <div className={styles.titles}>
@@ -39,7 +51,7 @@ export default function PlanCard({title="Pro",price="$79/mo",velocity="500 Mb/s"
                     
                     }
                 </div>
-                <div className={styles.button} onClick={() => {window.open(`https://api.whatsapp.com/send?phone=3123331401&text=Estou interessado pelo plano ${title}`,"_blank")}}>
+                <div className={styles.button} onClick={handleClick}>
                     <span className="bodyMedium">Assine já</span>
                 </div>
             </div>
