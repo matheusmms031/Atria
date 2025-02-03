@@ -12,6 +12,9 @@ import Contato from "./pages/Contato/Contato.jsx";
 import { HelmetProvider } from "react-helmet-async";
 import './App.css'
 import Nav from './components/Nav/Nav'
+import ReactGA from "react-ga4";
+
+ReactGA.initialize("AW-16842547823")
 
 function App() {
 

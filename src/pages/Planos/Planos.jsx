@@ -9,12 +9,22 @@ import gsap from "gsap"
 import video from "../../assets/fundo_planos.mp4"
 import { Helmet } from "react-helmet-async"
 import MetaPixel from "../../components/MetaPixel/MetaPixel"
+import ReactGA from "react-ga4"
 
 export default function Planos(){
 
     const title = useRef(null);
     const img = useRef(null);
     const videoref = useRef(null);
+
+    const handleClick = (title) => {
+        ReactGA.event("click", {
+            event_category: "User",
+            event_action: "click",
+            event_label: `${title}`
+        })
+    
+        window.open(`https://api.whatsapp.com/send?phone=3123331401&text=Estou interessado pelo plano ${title}`,"_blank")};
 
     useEffect(() => {
         gsap.fromTo(img.current, {opacity:0, x: 200}, {opacity:1, x: 0, duration: 1, ease: "power3.out",});
@@ -77,7 +87,7 @@ export default function Planos(){
                             <span className={`${styles.plansDescription} bodyLarge`}>
                             Ideal para pequenos negócios e flats, o Plano Turbo oferece conectividade confiável e eficiente, garantindo o desempenho necessário para atividades cotidianas. 
                             </span>
-                            <ButtonSample style={{alignSelf:"stretch"}} onClick={() => {window.open(`https://api.whatsapp.com/send?phone=3123331401&text=Estou interessado pelo plano Turbo`,"_blank")}}>
+                            <ButtonSample style={{alignSelf:"stretch"}} onClick={() => {handleClick("Turbo")}}>
                                 Assine já
                             </ButtonSample>
                         </div>
@@ -128,7 +138,7 @@ export default function Planos(){
                             Perfeito para residências conectadas, esse plano atende às necessidades de streaming em alta definição, múltiplos dispositivos e automação básica.
 
                             </span>
-                            <ButtonSample style={{alignSelf:"stretch"}} onClick={() => {window.open(`https://api.whatsapp.com/send?phone=3123331401&text=Estou interessado pelo plano Ultra`,"_blank")}}>
+                            <ButtonSample style={{alignSelf:"stretch"}} onClick={() => {handleClick("Ultra")}}>
                                 Assine já
                             </ButtonSample>
                         </div>
@@ -187,7 +197,7 @@ export default function Planos(){
                             <span className={`${styles.plansDescription} bodyLarge`}>
                                 Projetado especialmente para usuários que exigem alta performance, o Plano Premium oferece velocidade e desempenho. 
                             </span>
-                            <ButtonSample style={{alignSelf:"stretch"}} onClick={() => {window.open(`https://api.whatsapp.com/send?phone=3123331401&text=Estou interessado pelo plano Premium`,"_blank")}}>
+                            <ButtonSample style={{alignSelf:"stretch"}} onClick={() => {handleClick("Premium")}}>
                                 Assine já
                             </ButtonSample>
                         </div>
@@ -266,7 +276,7 @@ export default function Planos(){
                             O Plano Master é o ápice da conectividade.
                             Desenvolvido para clientes que exigem o máximo em desempenho e atendimento, combina a tecnologia mais avançada com suporte privilegiado. 
                             </span>
-                            <ButtonSample style={{alignSelf:"stretch"}} onClick={() => {window.open(`https://api.whatsapp.com/send?phone=3123331401&text=Estou interessado pelo plano Master`,"_blank")}}> 
+                            <ButtonSample style={{alignSelf:"stretch"}} onClick={() => {handleClick("Master")}}> 
                                 Assine já
                             </ButtonSample>
                         </div>
