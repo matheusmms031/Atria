@@ -1,14 +1,16 @@
 import styles from "./Sobre.module.scss"
 import logoup from "../../assets/logoup.png"
-import family from "../../assets/family.svg"
-import AppIcon from "../../assets/Icons/Icons=App-w.svg"
+import family from "../../assets/imagefundosobre.jpeg"
+import AppIcon from "../../assets/Icons/Icons=App.svg"
 import Footer from "../../components/Footer/Footer.jsx"
 import Publish from "../../components/Publish/Publish.jsx"
 import stylesHome from "../Home/Home.module.scss"
 import Tag from "../../components/Tag/Tag.jsx"
 import Employee from "../../components/Employee/Employee.jsx"
 import ScrollToTop from "../../components/ScrollToTop/ScrollToTop.jsx"
-import video from "../../assets/fundo_sobre.mp4"
+import Wifi from "../../assets/wifi-b.png"
+import video from "../../assets/fundo.mp4"
+import LogoAtriaPreto from "../../assets/logoatriapreto.png"
 
 import Relogio from "../../assets/relogio.png"
 import Lampada from "../../assets/lampada.png"
@@ -84,11 +86,10 @@ export default function Sobre(){
                 <div className={`${styles.familyContent} fade-in`}>
                     <div className={styles.familyTexts}>
                         <div className={styles.familyFirstBox}>
-                            <span className={`${styles.familyTitle} title1`}>Somos uma fámilia</span>
+                            <span className={`${styles.familyTitle} title1`}>Sobre a <br/> Átria Digital</span>
                             <span className={`${styles.familyFirstBoxDescription} bodyMedium`}>
-                            Na Átria Digital, acreditamos que oferecer planos de internet de alto padrão vai além de tecnologia avançada e velocidades incríveis. 
-                            Para nós, cada cliente, colaborador e parceiro faz parte de algo maior: uma família.
-                            Valorizamos relações baseadas em confiança, cuidado e excelência. 
+                            A Átria Digital é muito mais do que uma empresa de telecomunicações; somos a escolha daqueles que buscam excelência em conectividade, tecnologia e atendimento. 
+                            Inspirados pelo significado da palavra Átria, que representa luz, brilho e energia vital, nos dedicamos a conectar pessoas, residências e negócios com a mesma intensidade que ilumina e transforma.
                             
                             </span>
                             <img src={family} className={styles.familyImageMobile}/>
@@ -114,9 +115,17 @@ export default function Sobre(){
                             </div>
                         </div>
                     </div>
-                    <img src={family} className={styles.familyImage}/>
+                    <div className={styles.familyImageBox}>
+                        <img src={family} className={styles.familyImage}/>
+                    </div>
                 </div>
             </section>
+
+            <div className={styles.lineBreak}>
+                            <div>
+                                
+                            </div>
+                        </div>
 
             <section className={styles.ourValues} id='valores'>
                 <div className={`${styles.ourContents} fade-in`}>
@@ -174,6 +183,12 @@ export default function Sobre(){
                 </div>
             </section>
 
+            <div className={styles.lineBreak}>
+                <div>
+                    
+                </div>
+            </div>
+
 
             <section className={styles.porque}>
                 <div className={`${styles.porqueContent} fade-in`}>
@@ -185,7 +200,26 @@ export default function Sobre(){
                         Nossa missão não é apenas fornecer internet, mas criar uma experiência que reflita sua necessidade de exclusividade, estabilidade e inovação.
                         </span>
                     </div>
-                    <img src={logoup} className={styles.porqueImage}/>
+                    <img src={Wifi} className={styles.porqueImage}/>
+                </div>
+            </section>
+
+            <div className={styles.lineBreak}>
+                <div>
+                    
+                </div>
+            </div>
+
+            <section className={styles.porque}>
+                <div className={`${styles.porqueContent} fade-in`}>
+                    <div className={styles.porqueTitles}>
+                        <span className={`${styles.porqueTitle2} title2`}>Bem perto de você!!</span>
+                        <span className={`${styles.porqueDescription} bodyLarge`}>
+                        Com nosso escritório localizado na Avenida Luiz Paulo Franco - Belvedere, garantimos proximidade e agilidade no atendimento, reforçando nosso compromisso de estar sempre ao seu lado. 
+                        Escolher a Átria é optar por um serviço desenhado para transformar seu dia a dia, integrando tecnologia à sua vida de forma única. Venha fazer parte de uma conexão que não só entrega o melhor, mas também coloca você no centro de tudo o que fazemos. Porque na Átria, o que nos move é conectar com qualidade e brilhar junto com você.
+                        </span>
+                    </div>
+                    <img src={LogoAtriaPreto} className={styles.porqueImage}/>
                 </div>
             </section>
 

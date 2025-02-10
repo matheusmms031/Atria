@@ -7,16 +7,19 @@ import { CardFirst } from "../../components/CardFirst/CardFirst"
 import Grafico from "../../assets/grafico.png"
 import Parede from "../../assets/parede.png"
 
+import ImageTest from "../../assets/imageteste.jpeg"
+import ImageTest2 from "../../assets/imageteste2.jpeg"
+import ImageTest3 from "../../assets/imageteste3.jpeg"
 
 import WhatsappIcon from "../../assets/Icons/Icons=Whatsapp.svg"
-import WhatsappIconW from "../../assets/Icons/Icons=Whatsapp.svg"
+import WhatsappIconW from "../../assets/Icons/Icons=Whatsapp-w.svg"
 import HomeW from "../../assets/Icons/Icons=Home.svg"
 import HelpW from "../../assets/Icons/Icons=Help.svg"
 import TvW from "../../assets/Icons/Icons=Tv.svg"
 import WifiIcon from "../../assets/Icons/Icons=Wifi.svg"
-import WifiIconW from "../../assets/Icons/Icons=Wifi.svg"
+import WifiIconW from "../../assets/Icons/Icons=Wifi-w.svg"
 import AppIcon from "../../assets/Icons/Icons=App.svg"
-import AppIconW from "../../assets/Icons/Icons=App.svg"
+import AppIconW from "../../assets/Icons/Icons=App-w.svg"
 import HuaweiW from "../../assets/Icons/Icons=Huawei.svg"
 import RouterW from "../../assets/Icons/Icons=Roteador.svg"
 
@@ -115,9 +118,9 @@ export default function Home(){
                     <span className={`${styles.featuresTitle} title2`}>Veja nossos diferenciais</span>
                     <div className={styles.featuresBoxesLines}>
                         <div className={styles.featuresBoxesCollumns}>
-                            <FeatureBox image={WhatsappIconW} title="Rápida velocidade" description="Velocidade rápida de navegação garantida pela alta banda larga."/>
-                            <FeatureBox image={AppIconW} title="Aplicativo próprio" description="Disponibilidade de acessar seu plano atráves do aplicativo."/>
-                            <FeatureBox image={WifiIconW} title="Planos com Wifi-7" description="Wifi-7 é a versão mais recente e consolidada para um alto desempenho."/>
+                            <FeatureBox image={WhatsappIcon} title="Rápida velocidade" description="Velocidade rápida de navegação garantida pela alta banda larga."/>
+                            <FeatureBox image={AppIcon} title="Aplicativo próprio" description="Disponibilidade de acessar seu plano atráves do aplicativo."/>
+                            <FeatureBox image={WifiIcon} title="Planos com Wifi-7" description="Wifi-7 é a versão mais recente e consolidada para um alto desempenho."/>
                         </div>
                         <div className={styles.featuresBoxesCollumns}>
                             <FeatureBox image={HelpW} title="Suporte 24 horas" description="Nossa equipe está pronta para atender você a qualquer dia."/>
@@ -133,6 +136,11 @@ export default function Home(){
                 </div>
             </section>
 
+            <div className={styles.lineBreak}>
+                <div>
+                    
+                </div>
+            </div>
 
             <section className={styles.inovation}>
                 <div className={`${styles.inovationContent} fade-in`}>
@@ -151,6 +159,11 @@ export default function Home(){
                 </div>
             </section>
 
+            <div className={styles.lineBreak}>
+                <div>
+                    
+                </div>
+            </div>
 
             <section className={styles.works}>
                 <div className={styles.worksContent}>
@@ -162,11 +175,17 @@ export default function Home(){
                         </div>
                     </div>
                     <div className={`${styles.worksCards} fade-in`}>
-                        <CardSecond image={Grafico} title="Extrema conectividade" description="Nossos planos são essencialmente construidos para proporcionar um ambiente de alta conectividade e velocidade."/>
-                        <CardSecond image={Parede} title="Conexão Robusta" description="Todo o nossos sistema é robusto e sólido, testado e aprovado para evitar quedas na rede, assim garantindo confiabilidade."/>
+                        <CardSecond image={ImageTest3} title="Extrema conectividade" description="Nossos planos são essencialmente construidos para proporcionar um ambiente de alta conectividade e velocidade."/>
+                        <CardSecond image={ImageTest2} title="Conexão Robusta" description="Todo o nossos sistema é robusto e sólido, testado e aprovado para evitar quedas na rede, assim garantindo confiabilidade."/>
                     </div>
                 </div>
             </section>
+
+            <div className={styles.lineBreak}>
+                <div>
+                    
+                </div>
+            </div>
 
 
             <section className={styles.plans}>

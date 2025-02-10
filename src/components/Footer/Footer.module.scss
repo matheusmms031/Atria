@@ -3,41 +3,37 @@
     width: 100%;
     flex-direction: column;
     align-items: flex-start;
-    gap: 1.875rem;
-    background: #000;
+    background: #525252;
 
-    padding-top: 10rem;
 }
 
 .footerContent{
     display: flex;
-    height: 17.5625rem;
+    height: 13rem;
     justify-content: space-between;
     align-items: center;
     align-self: stretch;
-    padding: 0rem 2.5rem;
+    padding: 0rem 9rem;
 }
 
 .firstBox{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: flex-start;
-    align-self: stretch;
+    align-items: center;
 
-    width: 15rem;
 }
 
 .socialMedia{
     display: flex;
-    gap: 1rem;
+    gap: 4rem;
     align-items: center;
     justify-content: center;
 }
 
 .socialIcon{
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 35px;
+    height: 35px;
 }
 
 .desc{
@@ -49,20 +45,61 @@
     line-height: normal;
 }
 
+.leftBox{
+    display: flex;
+    align-items: flex-end;
+    justify-content: end;
+}
+
 .desc2{
-    color: #BCBCBC;
-    font-family: "Nunito";
-    font-size: 0.875rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    margin-bottom: 2.5rem;
-    margin-left: 2.5rem;
+    width: 100%;
+    background-color: #313131;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    div{
+        padding: 0rem 9rem;
+        color: #BCBCBC;
+        display: flex;
+        gap: 2rem;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        font-family: "Nunito";
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        height: 4rem;
+    }
+}
+
+.pin{
+    width: 32px;
+    height: 32px;
+}
+
+.linkBox{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.boxLinks{
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+    justify-content: center;
+}
+.linkSecond{
+    font-family: Nunito;
+    color: #FFF;
+    font-weight: 600;
+    font-size: 1rem;
 }
 
 .logo{
-    width: 10.5625rem;
-    height: 1.9375rem;
+    width: 6.8rem;
     flex-shrink: 0;
 }
 
@@ -75,7 +112,7 @@
 
 .secondBox{
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     gap: 3rem;
     align-self: stretch;
 }

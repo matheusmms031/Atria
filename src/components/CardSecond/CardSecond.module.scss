@@ -8,13 +8,16 @@
     justify-content: center;
     align-items: center;
     border-radius: 1.25rem;
-    border: 1px solid rgba(27, 27, 27, 0.08);
+    border: 2px solid #d2b003;
     gap: 2rem;
 }
 
 .image{
     width: 15rem;
     height: 15rem;
+    border-radius: 100%;
+    border: 2px solid #d2b003;
+    background-size: cover;
 }
 
 .texts{
@@ -26,14 +29,11 @@
 
 .title{
     text-align: center;
-    background: linear-gradient(180deg, #FFF 0%, #E8E120 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: #000000;
 }
 
 .description{
-    color: #FFF;
+    color: #000000;
     text-align: center;
     width: 21.5625rem;
     height: 4.3125rem;

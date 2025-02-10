@@ -8,7 +8,7 @@
     align-self: stretch;
     position: relative;
     height: 100vh;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.30) 0%, rgba(0, 0, 0, 0.30) 100%), linear-gradient(180deg, #000 0%, rgba(0, 0, 0, 0.80) 37%, rgba(0, 0, 0, 0.60) 50.5%, rgba(0, 0, 0, 0.60) 71.7%, rgba(0, 0, 0, 0.60) 75.84%, #000 100%);
+    background: linear-gradient(180deg, #000 -3.8%, rgba(0, 0, 0, 0.80) 21.55%, rgba(0, 0, 0, 0.60) 40.56%, rgba(0, 0, 0, 0.60) 70.41%, rgba(0, 0, 0, 0.60) 76.24%, rgba(25, 24, 0, 0.65) 93.62%);
 
 }
 
@@ -50,7 +50,23 @@
     align-items: center;
     gap: 1.5625rem;
     align-self: stretch;
-    background: #000;
+    background:#E8E120;
+}
+
+.lineBreak{
+    background-color: #E8E120;
+    width: 100vw;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    height: 2.3px;
+    justify-content: center;
+    div{
+        background-color: #3b3b3b;
+        width: 80%;
+        height: 2.3px;
+        border-radius: 10rem;
+    }
 }
 
 .videoBox{
@@ -85,10 +101,11 @@
 
 .ourTitle{
     line-height: 4.5rem; /* 80% */
+    color: #000;
 }
 
 .ourDescription{
-    color: #FFF;
+    color: #000000;
     text-align: left;
 }
 
@@ -121,6 +138,15 @@
     align-items: center;
     gap: 0.625rem;
     align-self: stretch;
+
+    span{
+        color: #000;
+    }
+}
+
+.ourElementDescription{
+    color: #000;
+    text-align: left;
 }
 
 .porque{
@@ -131,12 +157,12 @@
     align-items: center;
     gap: 5.3125rem;
     align-self: stretch;
-    background: linear-gradient(180deg, #000 0%, #252408 55.5%, #000 100%);
+    background: #E8E120;
 }
 
 .porqueContent{
     display: flex;
-    width: 58rem;
+    width: 65rem;
     align-items: center;
     gap: 3.375rem;
 }
@@ -159,15 +185,24 @@
     font-weight: 700;
     line-height: 3.4375rem; /* 101.852% */
     letter-spacing: -0.10125rem;
-    background: linear-gradient(180deg, #FFF 0%, #E1DE7B 79.5%, #E8E120 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: #000;
+}
+
+.porqueTitle2{
+    width: 28.3125rem;
+    height: 7rem;
+    /* H2 */
+    font-family: "BDSans";
+    font-size: 3.375rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 3.4375rem; /* 101.852% */
+    letter-spacing: -0.10125rem;
+    color: #000;
 }
 
 .porqueDescription{
-    width: 35.9375rem;
-    color: #FFF;
+    color: #000000;
     text-align: left;
     /* Body Large */
     font-family: Nunito;
@@ -179,8 +214,7 @@
 }
 
 .porqueImage{
-    width: 15.8125rem;
-    height: 14.9375rem;
+    width: 20rem;
     flex-shrink: 0;
 }
 
@@ -205,6 +239,7 @@
     height: 1.75rem;
 }
 
+
 @media (min-width:720px){
 
     .family{
@@ -214,12 +249,13 @@
         align-items: center;
         gap: 1.5625rem;
         align-self: stretch;
-        background: #000;
+        background: #E8E120;
     }
     .familyImage{
-        width: 27.1875rem;
-        height: 19.6875rem;
+        width: 27rem;
+        background-clip: cover;
         flex-shrink: 0;
+        border-radius: 100%;
     }
     .familyContent{
         display: flex;
@@ -233,6 +269,10 @@
         display: flex;
         align-items: center;
         gap: 0.625rem;
+
+        span{
+            color: #000;
+        }
     }
 
     .familyIcon{
@@ -267,14 +307,21 @@
         flex: 1 0 0;
     }
 
+    .familyComponentDesc{
+        color: #000;
+    }
+
     .familyTitle{
         font-size: 4rem;
         line-height: 4rem;
         margin-left: -5px;
+        color: #000;
+        height: 8.5rem;
     }
 
     .familyFirstBoxDescription{
         width: 28.125rem;
+        color: #000;
     }
     .familyImageMobile{
         display:none;
@@ -451,9 +498,27 @@
         font-size: 1rem;
         line-height: 1.3rem;
     }
-    .porqueTitle{
+
+    .porqueDescription2{
         width: auto;
-        
+        text-align: center;
+        font-size: 1rem;
+        line-height: 1.3rem;
+    }
+    .porqueTitle{
+        width: auto; 
+    }
+    .porqueTitle2{
+        width: auto;
+        height: 10rem; 
+    }
+
+    .ourValues{
+        padding: 5rem 0rem;
+    }
+
+    .porqueImage{
+        width: 15rem;
     }
 
     .heroContent{
@@ -491,7 +556,7 @@
         align-items: center;
         gap: 0.625rem;
         align-self: stretch;
-        background-color: #000;
+        background-color: #E8E120;
     }
     .familySecondBox{
         display: flex;
@@ -513,9 +578,13 @@
         align-items: center;
         gap: 0.625rem;
 
+        span{
+            color: #000;
+        }
+
     }
     .familyTitle{
-        color: #FFF;
+        color: #000;
 
         /* H2 */
         font-family: "BDSans";
@@ -524,6 +593,7 @@
         font-weight: 700;
         line-height: 2.4rem; /* 101.852% */
         letter-spacing: -0.10125rem;
+        height: 5.3rem;
     }
 
     .familyTexts{
@@ -551,12 +621,15 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
-        gap: 1.75rem;
+        align-items: flex-start;
+        gap: 1rem;
         align-self: stretch;
     }
+    .familyComponentDesc{
+        color: #000;
+    }
     .familyFirstBoxDescription{
-        color: #FFF;
+        color: #000000;
         text-align: justify;
         /* Body S */
         font-family: "Nunito";

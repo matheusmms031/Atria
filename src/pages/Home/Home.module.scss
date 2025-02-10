@@ -21,7 +21,7 @@
 }
 
 .logosDescription{
-    color: #7A7A7A;
+    color: #ffffff;
     text-align: center;
     display: flex;
     width: 15rem;
@@ -51,7 +51,7 @@
     gap: 0.625rem;
     flex-shrink: 0;
     align-self: stretch;
-    background-color: #000;
+    background-color: #b89900;
 }
 
 .logosContent{
@@ -122,7 +122,7 @@
     align-items: center;
     gap: 0.625rem;
     align-self: stretch;
-    background: black;
+    background: #E8E120;
 }
 
 .inovationContent{
@@ -140,14 +140,14 @@
 }
 
 .inovationTitle{
-    color: #E8E120;
+    color: #000000;
     text-align: center;
     font-size: 3.375rem;
     line-height: 3rem;
 }
 
 .inovationDescription{
-    color: #FFF;
+    color: #000000;
     text-align: center;
     width: 33.4375rem;
 }
@@ -167,7 +167,7 @@
     align-items: center;
     gap: 0.625rem;
     align-self: stretch;
-    background-color: #000;
+    background-color: #E8E120;
     padding: 5rem 0rem;
 
 }
@@ -194,19 +194,15 @@
 }
 
 .worksTitle{
-    color: #FFF;
+    color: #000000;
     text-align: center;
     height: 7.6875rem;
-    background: linear-gradient(180deg, #FFF 0%, #E1DE7B 79.5%, #E8E120 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
 }
 
 .worksDescription{
     width: 33.4375rem;
     
-    color: #FFF;
+    color: #000000;
     text-align: center;
 }
 
@@ -225,7 +221,23 @@
     justify-content: center;
     align-items: center;
     align-self: stretch;
-    background: linear-gradient(180deg, #E8E120 93.2%, #E8E120 93.25%, #E7E020 93.4%, #E6DF20 93.63%, #E4DD1F 93.94%, #DFD91F 94.33%, #D9D31E 94.77%, #D0CA1D 95.26%, #C5BF1B 95.8%, #B6B019 96.37%, #A39E17 96.97%, #8D8813 97.58%, #716E10 98.2%, #514F0B 98.81%, #2B2A06 99.42%, #000 100%);
+    background-color:#E8E120;
+}
+
+.lineBreak{
+    background-color: #E8E120;
+    width: 100vw;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    height: 2.3px;
+    justify-content: center;
+    div{
+        background-color: #3b3b3b;
+        width: 80%;
+        height: 2.3px;
+        border-radius: 10rem;
+    }
 }
 
 .featuresContent{
@@ -265,7 +277,7 @@
     align-items: center;
     gap: 75px;
     align-self: stretch;
-    background: radial-gradient(121.66% 52.68% at 50% 58.74%, #302E07 13%, #000 100%);
+    background-color:#E8E120;
 }
 
 .plansTexts{
@@ -286,16 +298,14 @@
 
 .plansTitle{
     text-align: center;
-    background: linear-gradient(180deg, #FFF -33.06%, #DDDA7E 123.39%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: #000;
     flex-direction: column;
     justify-content: center;
 }
 
 .plansDescription{
     text-align: center;
+    color:#000
 }
 
 .plansBox{
@@ -387,11 +397,11 @@
         gap: 0.625rem;
         flex-shrink: 0;
         align-self: stretch;
-        background-color: #000;
+        background-color: #d2b003;
     }
 
     .inovationDescription{
-        color: #FFF;
+        color: #000000;
         text-align: center;
         width: 22.3125rem;
     }
