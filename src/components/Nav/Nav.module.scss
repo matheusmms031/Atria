@@ -44,6 +44,12 @@
 
 }
 
+a{
+    color: #FFF;
+        text-decoration: none;
+
+}
+
 .menuNav{
     display: none;
     position: relative;
@@ -52,10 +58,10 @@
     align-items: center;
     justify-content: center;
     background: rgb(0, 0, 0);
-    gap: 1.5rem;
+    gap: 1rem;
     z-index: 3;
-    padding-top: 3rem;
-    padding-bottom: 3rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 
     span{
         display: flex;
@@ -102,5 +108,14 @@
     .menuIconX{
         width: 0.95rem;
         height: 0.95rem;
+    }
+    .socialIcon{
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+    .boxsocial{
+        display: flex;
+        gap: 2rem;
+        padding-top: 1rem;
     }
 }

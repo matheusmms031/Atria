@@ -5,16 +5,10 @@
     align-items: center;
     gap: 0.25rem;
     border-radius: 0.625rem;
-    background: #FFF;
+    background: #000000;
     transition: 0.5s ease-in-out;
+    color: #fff;
 
     cursor: pointer;
 
-}
-
-.buttonsample:hover{
-    background-color: #E8E120;
-    span{
-        color: black;
-    }
 }

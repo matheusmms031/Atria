@@ -8,7 +8,7 @@
     gap: 0.625rem;
     flex-shrink: 0;
     align-self: stretch;
-    background-color: #000;
+    background-color: #E8E120;
 }
 
 .Content{
@@ -24,7 +24,6 @@
 
 .title{
     text-align: center;
-    text-shadow: 0px 0px 5.8px rgba(255, 255, 255, 0.09);
     /* H2 */
     font-family: "BDSans";
     font-size: 5rem;
@@ -33,10 +32,7 @@
     font-weight: 700;
     line-height: 4rem; /* 101.852% */
     letter-spacing: -0.10125rem;
-    background: linear-gradient(180deg, #000 -12.97%, #636363 4.73%, #A8A8A8 29.79%, #FFF 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: #000000;
 }
 
 .social{
@@ -52,7 +48,7 @@
 }
 
 .description{
-    color: #FFF;
+    color: #000000;
     text-align: center;
     width: 35rem;
 
@@ -90,7 +86,7 @@
     align-self: stretch;
 
     span{
-        color: #FFF;
+        color: #000000;
 
         /* Body Medium */
         font-family: Nunito;
@@ -109,15 +105,15 @@
         gap: 0.625rem;
         align-self: stretch;
         border-radius: 0.5rem;
-        border: 2px solid #FFF;
-        background-color: #000;
+        border: 2px solid #252525;
+        background-color: #525252;
         color: #ffffff;
     }
 
     textarea{
         display: flex;
         color: #ffffff;
-        background-color: #000;
+        background-color: #525252;
         height: 8.4375rem;
         padding: 0.625rem;
         align-items: flex-start;
@@ -125,8 +121,10 @@
         flex-shrink: 0;
         align-self: stretch;
         border-radius: 0.5rem;
-        border: 2px solid #FFF;
+        border: 2px solid #252525;
     }
+
+    
 }
 
 

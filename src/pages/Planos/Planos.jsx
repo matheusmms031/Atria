@@ -1,16 +1,26 @@
 import styles from "./Planos.module.scss"
 import ScrollToTop from "../../components/ScrollToTop/ScrollToTop"
-import LogoUp from "../../assets/logoup.png"
+import LogoUp from "../../assets/atrialogopreta.png"
 import ButtonSample from "../../components/ButtonSample/ButtonSample"
 import Footer from "../../components/Footer/Footer"
-
+import ReactGA from "react-ga4"
 import { useRef, useEffect, useLayoutEffect } from "react"
 import gsap from "gsap"
-import video from "../../assets/fundo_planos.mp4"
+import video from "../../assets/fundo.mp4"
 import { Helmet } from "react-helmet-async"
 import MetaPixel from "../../components/MetaPixel/MetaPixel"
 
 export default function Planos(){
+
+    const handleClick = (title) => {
+        ReactGA.event("click", {
+            event_category: "User",
+            event_action: "click",
+            event_label: `${title}`
+        })
+    
+        window.open(`https://api.whatsapp.com/send?phone=3123331401&text=Estou interessado pelo plano ${title}`,"_blank")};
+
 
     const title = useRef(null);
     const img = useRef(null);
@@ -77,7 +87,7 @@ export default function Planos(){
                             <span className={`${styles.plansDescription} bodyLarge`}>
                             Ideal para pequenos negócios e flats, o Plano Turbo oferece conectividade confiável e eficiente, garantindo o desempenho necessário para atividades cotidianas. 
                             </span>
-                            <ButtonSample style={{alignSelf:"stretch"}} onClick={() => {window.open(`https://api.whatsapp.com/send?phone=3123331401&text=Estou interessado pelo plano Turbo`,"_blank")}}>
+                            <ButtonSample style={{alignSelf:"stretch"}} onClick={() => handleClick("Turbo")}>
                                 Assine já
                             </ButtonSample>
                         </div>
@@ -116,6 +126,13 @@ export default function Planos(){
                         </div>
                     </div>
                 </section>
+
+                <div className={styles.lineBreak}>
+                                <div>
+                                    
+                                </div>
+                            </div>
+
                 <section className={styles.plans}>
                     <div className={`${styles.plansContent} fade-in`} id="ultra">
                         <div className={styles.plansFirstBox}>
@@ -128,7 +145,7 @@ export default function Planos(){
                             Perfeito para residências conectadas, esse plano atende às necessidades de streaming em alta definição, múltiplos dispositivos e automação básica.
 
                             </span>
-                            <ButtonSample style={{alignSelf:"stretch"}} onClick={() => {window.open(`https://api.whatsapp.com/send?phone=3123331401&text=Estou interessado pelo plano Ultra`,"_blank")}}>
+                            <ButtonSample style={{alignSelf:"stretch"}} onClick={() => handleClick("Ultra")}>
                                 Assine já
                             </ButtonSample>
                         </div>
@@ -176,6 +193,13 @@ export default function Planos(){
                         </div>
                     </div>
                 </section>
+
+                <div className={styles.lineBreak}>
+                                <div>
+                                    
+                                </div>
+                            </div>
+
                 <section className={styles.plans}>
                     <div className={`${styles.plansContent} fade-in`} id="premium">
                         <div className={styles.plansFirstBox}>
@@ -187,7 +211,7 @@ export default function Planos(){
                             <span className={`${styles.plansDescription} bodyLarge`}>
                                 Projetado especialmente para usuários que exigem alta performance, o Plano Premium oferece velocidade e desempenho. 
                             </span>
-                            <ButtonSample style={{alignSelf:"stretch"}} onClick={() => {window.open(`https://api.whatsapp.com/send?phone=3123331401&text=Estou interessado pelo plano Premium`,"_blank")}}>
+                            <ButtonSample style={{alignSelf:"stretch"}} onClick={() => handleClick("Premium")}>
                                 Assine já
                             </ButtonSample>
                         </div>
@@ -254,6 +278,12 @@ export default function Planos(){
                         </div>
                     </div>
                 </section>
+                <div className={styles.lineBreak}>
+                                <div>
+                                    
+                                </div>
+                            </div>
+
                 <section className={styles.plans}>
                     <div className={`${styles.plansContent} fade-in`} id="master">
                         <div className={styles.plansFirstBox}>
@@ -266,7 +296,7 @@ export default function Planos(){
                             O Plano Master é o ápice da conectividade.
                             Desenvolvido para clientes que exigem o máximo em desempenho e atendimento, combina a tecnologia mais avançada com suporte privilegiado. 
                             </span>
-                            <ButtonSample style={{alignSelf:"stretch"}} onClick={() => {window.open(`https://api.whatsapp.com/send?phone=3123331401&text=Estou interessado pelo plano Master`,"_blank")}}> 
+                            <ButtonSample style={{alignSelf:"stretch"}} onClick={() => handleClick("Master")}> 
                                 Assine já
                             </ButtonSample>
                         </div>

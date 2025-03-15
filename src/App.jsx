@@ -13,6 +13,10 @@ import { HelmetProvider } from "react-helmet-async";
 import './App.css'
 import Nav from './components/Nav/Nav'
 
+import ReactGA from "react-ga4";
+
+ReactGA.initialize("G-EQCF6W2SFQ")
+
 function App() {
 
   return (

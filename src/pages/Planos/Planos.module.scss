@@ -33,14 +33,14 @@
     position: absolute;
     background-color: #000;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     z-index: 0;
 }
 
 .video{
     width: 100%;
     z-index: 0;
-    height: 100%;
+    height: 100vh;
     object-fit: cover;
 }
 
@@ -76,8 +76,8 @@
     gap: 8rem;
     flex-shrink: 0;
     align-self: stretch;
-    background: linear-gradient(180deg, #000 0%, #222406 52.5%, #000 98%);
-    padding-bottom: 12rem;
+    background-color: #E8E120;
+    padding: 5rem 0rem;
 }
 
 .plansContent{
@@ -107,14 +107,14 @@
 .plansTitle{
     text-align: left;
     margin-left: -6px;
-    color: #FFF;
+    color: #000000;
     font-weight: 700;
     line-height: 4rem; /* 101.852% */
     letter-spacing: -0.10125rem;
 }
 
 .plansPlan{
-    color: #FFF;
+    color: #000000;
     /* Body Large */
     font-family: Nunito;
     font-size: 1.5rem;
@@ -124,7 +124,7 @@
     letter-spacing: -0.0495rem;
 }
 .plansVelocity{
-    color: rgba(255, 255, 255, 0.80);
+    color: rgba(0, 0, 0, 0.8);
     font-family: Nunito;
     font-size: 1.3rem;
     font-style: normal;
@@ -163,6 +163,7 @@
     align-items: center;
     gap: 0.625rem;
     align-self: stretch;
+    color: #000;
 }
 
 .plansComponentIcon{
@@ -171,10 +172,31 @@
 }
 .plansComponentDescription{
     text-align: left;
+    color: #000;
+}
+
+.plansDescription{
+    color:#000
+}
+
+.lineBreak{
+    background-color: #E8E120;
+    width: 100vw;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    height: 2.3px;
+    justify-content: center;
+    div{
+        background-color: #3b3b3b;
+        width: 80%;
+        height: 2.3px;
+        border-radius: 10rem;
+    }
 }
 
 .condicao{
-    color: #d3d600;
+    color: #d60000;
     font-size: 0.7rem;
     font-family: "DM Sans";
 }

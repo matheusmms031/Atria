@@ -4,6 +4,8 @@ import { NavLink } from "react-router"
 import Menu from "../../assets/Icons/Icons=Menu.svg"
 import { useState, useRef, } from "react";
 import X from "../../assets/Icons/x.png"
+import Instagram from "../../assets/Icons/Property 1=Instagram.svg"
+import Whatsapp from "../../assets/Icons/Icons=Whatsapp-w.svg"
 import gsap from "gsap";
 
 
@@ -53,6 +55,11 @@ export default function Nav() {
                                     Contato
                             </NavLink>
                         </span>
+                        <span className="bodyMedium">
+                        <a href="https://central.2itelecom.hubsoft.com.br/">
+                                Área do cliente
+                        </a>
+                    </span>
                 </div>
 
                 <div className={styles.button} onClick={handleClick}>   
@@ -87,6 +94,22 @@ export default function Nav() {
                                 Contato
                         </NavLink>
                     </span>
+                    <span className="bodyLarge">
+                        <a href="https://central.2itelecom.hubsoft.com.br/">
+                                Área do cliente
+                        </a>
+                    </span>
+
+                    
+                    <div className={styles.boxsocial}>
+                        <a href="https://www.instagram.com/atriadigitalbr/">
+                            <img src={Instagram} className={styles.socialIcon}/>
+                        </a>
+                        <a href="https://api.whatsapp.com/send?phone=3123331401">
+                            <img src={Whatsapp} className={styles.socialIcon}/>
+                        </a>
+                    </div>
+
                 </div>
             
         </div>

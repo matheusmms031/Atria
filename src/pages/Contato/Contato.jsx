@@ -1,9 +1,11 @@
 import styles from "./Contato.module.scss"
 import { useState } from "react"
 import ButtonSample from "../../components/ButtonSample/ButtonSample.jsx"
+import Footer from "../../components/Footer/Footer.jsx"
+import ScrollToTop from "../../components/ScrollToTop/ScrollToTop.jsx"
 
-import WhatssapIcon from "../../assets/Icons/Icons=Whatsapp-w.svg"
-import InstagramIcon from "../../assets/Icons/Property 1=Instagram.svg"
+import WhatssapIcon from "../../assets/Icons/Icons=Whatsapp.svg"
+import InstagramIcon from "../../assets/Icons/InstagramB.svg"
 import MetaPixel from "../../components/MetaPixel/MetaPixel.jsx"
 import { Helmet } from "react-helmet-async"
 
@@ -19,6 +21,7 @@ export default function Contato(){
         </Helmet>
         <MetaPixel/>
         <div className="stack">
+            <ScrollToTop />
             <div className={styles.Contact}>
                 <div className={styles.Content}>
                     <div className={styles.Titles}>
@@ -40,11 +43,13 @@ export default function Contato(){
                     </div>
                     <div className={styles.social}>
                         <img src={WhatssapIcon} alt="Whatsapp" className={styles.socialIcon} onClick={() => {window.open("https://api.whatsapp.com/send?phone=3123331401","_blank")}}/>
-                        <img src={InstagramIcon} alt="Whatsapp" className={styles.socialIcon}/>
+                        <img src={InstagramIcon} alt="Whatsapp" className={styles.socialIcon} onClick={() => {window.open("https://www.instagram.com/atriadigitalbr/","_blank")}}/>
                     </div>
                 </div>
             </div>
+            <Footer/>
         </div>
+        
         </>
     )
 }

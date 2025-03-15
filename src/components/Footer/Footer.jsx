@@ -64,13 +64,13 @@ export default function Footer(){
                         <a href="https://www.instagram.com/atriadigitalbr/">
                             <img src={Instagram} alt="Instagram" className={styles.socialIcon}/>
                         </a>
-                        <a href="https://www.instagram.com/atriadigitalbr/">
+                        <a>
                             <img src={X} alt="Instagram" className={styles.socialIcon}/>
                         </a>
-                        <a href="https://www.instagram.com/atriadigitalbr/">
+                        <a>
                             <img src={Link} alt="Instagram" className={styles.socialIcon}/>
                         </a>
-                        <a href="https://www.instagram.com/atriadigitalbr/">
+                        <a>
                             <img src={Youtube} alt="Instagram" className={styles.socialIcon}/>
                         </a>
                     </div>
@@ -80,7 +80,7 @@ export default function Footer(){
                 <div>
                     <img src={Pin} alt="Instagram" className={styles.pin}/>
                     <span>
-                        Av. Luiz Paulo Franco,603 - Sala 603 - Belvedere - Belo Horizonte - MG
+                        Av. Luiz Paulo Franco, 603 - Sala 603 - Belvedere - Belo Horizonte - MG
                     </span>
                 </div>
                 <div className={styles.leftBox}>
